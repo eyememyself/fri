@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-01 Fri 12:30 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pharmacology</title>
+<meta name="author" content="Staff Member(s), [[https://eyememyself.github.io][OurManyOrgs]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Pharmacology</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga93d322">1. General</a></li>
+<li><a href="#org8a6fea8">2. STEMM</a>
+<ul>
+<li><a href="#org115f950">2.1. Systems Sciences, Misc</a>
+<ul>
+<li><a href="#org7571b59">2.1.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org5cb101b">2.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgf9233a9">3. Worldly Matters</a>
+<ul>
+<li><a href="#org245f888">3.1. Orgs</a></li>
+<li><a href="#orgfb42199">3.2. Nation States</a>
+<ul>
+<li><a href="#org646a6bb">3.2.1. India</a></li>
+</ul>
+</li>
+<li><a href="#orgb1166e1">3.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org65f06fd">4. Arts</a>
+<ul>
+<li><a href="#orgb797506">4.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9ca9c34">5. Special Topics</a>
+<ul>
+<li><a href="#org6dd2b79">5.1. Internet Resources</a></li>
+<li><a href="#org0c3d203">5.2. Texts</a></li>
+</ul>
+</li>
+<li><a href="#org62c71d9">6. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-orga93d322" class="outline-2">
+<h2 id="orga93d322"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Pharmacology,” Wikipedia. Aug. 23, 2023. Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Pharmacology&amp;oldid=1171836793">https://en.wikipedia.org/w/index.php?title=Pharmacology&amp;oldid=1171836793</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8a6fea8" class="outline-2">
+<h2 id="org8a6fea8"><span class="section-number-2">2.</span> STEMM</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org115f950" class="outline-3">
+<h3 id="org115f950"><span class="section-number-3">2.1.</span> Systems Sciences, Misc</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org7571b59" class="outline-4">
+<h4 id="org7571b59"><span class="section-number-4">2.1.1.</span> Misc</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org6a2d55c"></a>General<br />
+<div class="outline-text-5" id="text-2-1-1-1">
+<ul class="org-ul">
+<li>“Systems pharmacology,” Wikipedia. Jul. 30, 2021. Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Systems_pharmacology&amp;oldid=1036191731">https://en.wikipedia.org/w/index.php?title=Systems_pharmacology&amp;oldid=1036191731</a></li>
+<li>“Quantitative systems pharmacology - Wikipedia.” Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Quantitative_systems_pharmacology">https://en.wikipedia.org/wiki/Quantitative_systems_pharmacology</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org135abe7"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="org21e1d10"></a>Articles, Essays<br />
+<div class="outline-text-6" id="text-2-1-1-2-1">
+<ul class="org-ul">
+<li>J. Knöchel, C. Kloft, and W. Huisinga, “Understanding and reducing complex systems pharmacology models based on a novel input-response index,” J Pharmacokinet Pharmacodyn, vol. 45, no. 1, pp. 139–157, Feb. 2018, doi: 10.1007/s10928-017-9561-x.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org48bb062"></a>Misc<br />
+<div class="outline-text-5" id="text-2-1-1-3">
+<ul class="org-ul">
+<li>“The Emerging Discipline of Quantitative Systems Pharmacology | Frontiers Research Topic.” Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://www.frontiersin.org/research-topics/2103/the-emerging-discipline-of-quantitative-systems-pharmacology">https://www.frontiersin.org/research-topics/2103/the-emerging-discipline-of-quantitative-systems-pharmacology</a></li>
+
+<li>“Systems Pharmacology,” Leiden University. Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://www.universiteitleiden.nl/en/science/drug-research/systems-pharmacology/systems-pharmacology">https://www.universiteitleiden.nl/en/science/drug-research/systems-pharmacology/systems-pharmacology</a></li>
+<li>“MGH Center for Systems Biology :: Programs :: Base :: People.” Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://csb.mgh.harvard.edu/pis">https://csb.mgh.harvard.edu/pis</a></li>
+<li>“Pharmacometrics &amp; Computional Disease Modelling - PharMetrX.” Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://www.pharmetrx.de/">https://www.pharmetrx.de/</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5cb101b" class="outline-3">
+<h3 id="org5cb101b"><span class="section-number-3">2.2.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-orgf9233a9" class="outline-2">
+<h2 id="orgf9233a9"><span class="section-number-2">3.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org245f888" class="outline-3">
+<h3 id="org245f888"><span class="section-number-3">3.1.</span> Orgs</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“ASPET.” Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://www.aspet.org/">https://www.aspet.org/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfb42199" class="outline-3">
+<h3 id="orgfb42199"><span class="section-number-3">3.2.</span> Nation States</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-org646a6bb" class="outline-4">
+<h4 id="org646a6bb"><span class="section-number-4">3.2.1.</span> India</h4>
+<div class="outline-text-4" id="text-3-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org79348d8"></a>General<br /></li>
+<li><a id="orgf8b9e08"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="orgbfd478b"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orge2ec7c9"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org8a9bdad"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org43425f4"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="orga13704d"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org230c94d"></a>Special Topics<br /></li>
+<li><a id="orgb032e12"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb1166e1" class="outline-3">
+<h3 id="orgb1166e1"><span class="section-number-3">3.3.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org65f06fd" class="outline-2">
+<h2 id="org65f06fd"><span class="section-number-2">4.</span> Arts</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgb797506" class="outline-3">
+<h3 id="orgb797506"><span class="section-number-3">4.1.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org9ca9c34" class="outline-2">
+<h2 id="org9ca9c34"><span class="section-number-2">5.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org6dd2b79" class="outline-3">
+<h3 id="org6dd2b79"><span class="section-number-3">5.1.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-5-1">
+<ul class="org-ul">
+<li>“About Pharmacology,” www. Accessed: Oct. 01, 2023. [Online]. Available: <a href="https://www.aspet.org/aspet/education-careers/about-pharmacology">https://www.aspet.org/aspet/education-careers/about-pharmacology</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org0c3d203" class="outline-3">
+<h3 id="org0c3d203"><span class="section-number-3">5.2.</span> Texts</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>B. Knollmann and L. Brunton, Goodman and Gilman’s The Pharmacological Basis of Therapeutics, 14th edition. New York: McGraw-Hill Education, 2022.</li>
+<li>Golan, Principles of Pharmacology, 4/e. Wolters Kluwer, 2016.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org62c71d9" class="outline-2">
+<h2 id="org62c71d9"><span class="section-number-2">6.</span> Misc</h2>
+<div class="outline-text-2" id="text-6">
+<hr />
+
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/disclaimer.html">Disclaimer</a>
+</p>
+
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://eyememyself.github.io">OurManyOrgs</a></p>
+<p class="date">Created: 2026-05-01 Fri 12:30</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

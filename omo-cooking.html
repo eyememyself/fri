@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-01 Fri 12:31 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cooking</title>
+<meta name="author" content="Staff Member(s), [[https://eyememyself.github.io][OurManyOrgs]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Cooking</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org8f81942">1. General</a></li>
+<li><a href="#org633507c">2. Clean Cooking</a></li>
+<li><a href="#org3a1ce8f">3. STEMM</a>
+<ul>
+<li><a href="#orgfab1a5d">3.1. General</a></li>
+<li><a href="#org6154417">3.2. Environment</a></li>
+<li><a href="#org5edab54">3.3. Tools</a>
+<ul>
+<li><a href="#orgb562f01">3.3.1. Cookware</a></li>
+<li><a href="#org9926a12">3.3.2. Cooking Appliances</a></li>
+<li><a href="#org98023e2">3.3.3. Utensils</a></li>
+</ul>
+</li>
+<li><a href="#orgd48f0f1">3.4. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgdf1fe6e">4. Worldly Matters</a>
+<ul>
+<li><a href="#org063778a">4.1. Space and Time</a></li>
+<li><a href="#orga7b8a5e">4.2. Space, Earth, Life Sciences, Environment, Health, Misc</a>
+<ul>
+<li><a href="#org8ca39a5">4.2.1. GreenPeace International</a></li>
+</ul>
+</li>
+<li><a href="#orgab60588">4.3. Religions, Spirituality, Misc</a></li>
+<li><a href="#org893538d">4.4. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org8c8890f">4.4.1. Nation States</a></li>
+<li><a href="#org90aedc4">4.4.2. Racial Classes</a></li>
+</ul>
+</li>
+<li><a href="#org4ee1e83">4.5. Business Studies, Misc</a></li>
+<li><a href="#org0e68b7b">4.6. Humanities, Misc</a></li>
+<li><a href="#org93c8fd9">4.7. Security Studies, Misc</a></li>
+<li><a href="#org38a6c7b">4.8. Communication, Misc</a></li>
+<li><a href="#org0588a50">4.9. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org9fc367c">5. Core</a></li>
+<li><a href="#orga221bd2">6. Arts</a></li>
+<li><a href="#org2354e08">7. Special Topics</a>
+<ul>
+<li><a href="#org25d0154">7.1. Veg Food</a>
+<ul>
+<li><a href="#org4961fcb">7.1.1. General</a></li>
+<li><a href="#org3f7d484">7.1.2. STEMM</a></li>
+<li><a href="#org48dc97d">7.1.3. Worldly Matters</a></li>
+<li><a href="#org0616983">7.1.4. Core</a></li>
+<li><a href="#orgf52f305">7.1.5. Special Topics</a></li>
+<li><a href="#org1b9c545">7.1.6. Misc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org8ebfb8c">8. Misc</a></li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org8f81942" class="outline-2">
+<h2 id="org8f81942"><span class="section-number-2">1.</span> General</h2>
+</div>
+<div id="outline-container-org633507c" class="outline-2">
+<h2 id="org633507c"><span class="section-number-2">2.</span> Clean Cooking</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>V. Hari, <b>Food Babe Kitchen: More than 100 Delicious, Real Food Recipes to Change Your Body and Your Life: THE NEW YORK TIMES BESTSELLER.</b> Hay House, Inc, 2020.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3a1ce8f" class="outline-2">
+<h2 id="org3a1ce8f"><span class="section-number-2">3.</span> STEMM</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orgfab1a5d" class="outline-3">
+<h3 id="orgfab1a5d"><span class="section-number-3">3.1.</span> General</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>D. S. Farrimond, The Science of Cooking. East Rutherford: DK, 2015.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6154417" class="outline-3">
+<h3 id="org6154417"><span class="section-number-3">3.2.</span> Environment</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>OCA, “Reduce, Reuse, Refuse: Tips To Cut down Plastic Use in Your Kitchen,” Organic Consumers. Accessed: Feb. 10, 2024. [Online]. Available: <a href="https://organicconsumers.org/reduce-reuse-refuse-tips-to-cut-down-plastic-use-in-your-kitchen/">https://organicconsumers.org/reduce-reuse-refuse-tips-to-cut-down-plastic-use-in-your-kitchen/</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>GreenPeace CookBook <a href="https://medium.com/greenpeacecookbook">https://medium.com/greenpeacecookbook</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5edab54" class="outline-3">
+<h3 id="org5edab54"><span class="section-number-3">3.3.</span> Tools</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-orgb562f01" class="outline-4">
+<h4 id="orgb562f01"><span class="section-number-4">3.3.1.</span> Cookware</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ul class="org-ul">
+<li><b>“Tips on safe cookware,”</b> EWG. <a href="https://www.ewg.org/research/canaries-kitchen/tips-safe-cookware">https://www.ewg.org/research/canaries-kitchen/tips-safe-cookware</a> (accessed Aug. 14, 2020).</li>
+
+<li>“Why you should throw away your Teflon pan the second it cracks,” Popular Science, Nov. 14, 2022. <a href="https://www.popsci.com/environment/non-stick-pan-plastic-pollution/">https://www.popsci.com/environment/non-stick-pan-plastic-pollution/</a> (accessed Nov. 16, 2022).</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Paco, “Toxic Truth? The Cookware Craze Redefining ‘Ceramic’ and ‘Nontoxic,’” Organic Consumers. Accessed: Jun. 18, 2025. [Online]. Available: <a href="https://organicconsumers.org/toxic-truth-the-cookware-craze-redefining-ceramic-and-nontoxic/">https://organicconsumers.org/toxic-truth-the-cookware-craze-redefining-ceramic-and-nontoxic/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9926a12" class="outline-4">
+<h4 id="org9926a12"><span class="section-number-4">3.3.2.</span> Cooking Appliances</h4>
+<div class="outline-text-4" id="text-3-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org46e0cb6"></a>Microwave Oven<br />
+<div class="outline-text-5" id="text-3-3-2-1">
+<ul class="org-ul">
+<li>S. S. &amp; V. Scaria, “Scientists find bacteria living in microwave ovens,” The Hindu, Aug. 15, 2024. Accessed: Aug. 15, 2024. [Online]. Available: <a href="https://www.thehindu.com/sci-tech/science/scientists-find-bacteria-living-in-microwave-ovens/article68523521.ece">https://www.thehindu.com/sci-tech/science/scientists-find-bacteria-living-in-microwave-ovens/article68523521.ece</a></li>
+<li>A. Soliman, “Your microwave oven has its own microbiome,” Nature, Aug. 2024, doi: 10.1038/d41586-024-02553-9.</li>
+
+<li>“Microwave Buying Guide,” Consumer Reports. Accessed: Jun. 30, 2024. [Online]. Available: <a href="https://www.consumerreports.org/appliances/microwave-ovens/buying-guide/">https://www.consumerreports.org/appliances/microwave-ovens/buying-guide/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgffa3a1f"></a>Misc<br />
+<div class="outline-text-5" id="text-3-3-2-2">
+<ul class="org-ul">
+<li><b>“Kicking the Gas Habit: How Gas is Harming our Health,”</b> Climate Council. <a href="https://www.climatecouncil.org.au/resources/gas-habit-how-gas-harming-health/">https://www.climatecouncil.org.au/resources/gas-habit-how-gas-harming-health/</a> (accessed May 07, 2021).</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org98023e2" class="outline-4">
+<h4 id="org98023e2"><span class="section-number-4">3.3.3.</span> Utensils</h4>
+<div class="outline-text-4" id="text-3-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org5c0b47e"></a>Disposable Utensils<br />
+<div class="outline-text-5" id="text-3-3-3-1">
+<ul class="org-ul">
+<li><i>“Ecoware - Eco Friendly Tableware and Compostable Packaging,”</i> Ecoware. <a href="https://ecoware.in/">https://ecoware.in/</a> (accessed Aug. 14, 2020).
+<ul class="org-ul">
+<li>FabCafe uses it.</li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="orga1c5ab6"></a>Misc<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd48f0f1" class="outline-3">
+<h3 id="orgd48f0f1"><span class="section-number-3">3.4.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-4">
+<ul class="org-ul">
+<li>S. Kelleher, “Industry, environmental groups spar over California bill to ban PFAS in cookware,” The New Lede. Accessed: Sep. 30, 2025. [Online]. Available: <a href="https://www.thenewlede.org/2025/09/california-cookware-pfas-ban/">https://www.thenewlede.org/2025/09/california-cookware-pfas-ban/</a></li>
+
+<li>“What Is the Most Energy Efficient Refrigerator? Here’s the Type That Most Experts Recommend,” Popular Mechanics. Accessed: Sep. 04, 2025. [Online]. Available: <a href="https://www.popularmechanics.com/home/interior-projects/a65912183/what-is-the-most-energy-efficient-refrigerator/">https://www.popularmechanics.com/home/interior-projects/a65912183/what-is-the-most-energy-efficient-refrigerator/</a></li>
+
+<li>T. Lister and H. Blumenthal, Kitchen Chemistry. London, UK: Royal Society of Chemistry, 2005.</li>
+
+<li>M. Hartings, Chemistry in Your Kitchen. Cambridge, UK: Royal Society of Chemistry, 2017.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>D. S. Farrimond, The Science of Cooking. DK, 2015.</li>
+
+<li>Paco, “Toxic Chemicals in the Kitchen: 5 Low-Stress Clean Swaps,” Organic Consumers. Accessed: Dec. 11, 2024. [Online]. Available: <a href="https://organicconsumers.org/toxic-chemicals-in-the-kitchen-5-low-stress-clean-swaps/">https://organicconsumers.org/toxic-chemicals-in-the-kitchen-5-low-stress-clean-swaps/</a></li>
+
+<li><i>“Science &amp; Cooking: From Haute Cuisine to Soft Matter Science (chemistry),”</i> Harvard Online Courses, Aug. 04, 2015. <a href="https://online-learning.harvard.edu/course/science-and-cooking">https://online-learning.harvard.edu/course/science-and-cooking</a> (accessed Apr. 23, 2021).</li>
+
+<li>D. R. author Aut, <i>“Q&amp;A: Pia Sörensen and David Weitz on physics in the kitchen,”</i> Apr. 2021, doi: 10.1063/PT.6.4.20210414a.</li>
+
+<li>R. Bansil, <i>“A taste of soft-matter physics,”</i> Physics Today, vol. 74, no. 4, pp. 53–54, Apr. 2021, doi: 10.1063/PT.3.4726.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdf1fe6e" class="outline-2">
+<h2 id="orgdf1fe6e"><span class="section-number-2">4.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org063778a" class="outline-3">
+<h3 id="org063778a"><span class="section-number-3">4.1.</span> Space and Time</h3>
+</div>
+<div id="outline-container-orga7b8a5e" class="outline-3">
+<h3 id="orga7b8a5e"><span class="section-number-3">4.2.</span> Space, Earth, Life Sciences, Environment, Health, Misc</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<div id="outline-container-org8ca39a5" class="outline-4">
+<h4 id="org8ca39a5"><span class="section-number-4">4.2.1.</span> GreenPeace International</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<ul class="org-ul">
+<li>GreenPeace CookBook <a href="https://medium.com/greenpeacecookbook">https://medium.com/greenpeacecookbook</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgab60588" class="outline-3">
+<h3 id="orgab60588"><span class="section-number-3">4.3.</span> Religions, Spirituality, Misc</h3>
+</div>
+<div id="outline-container-org893538d" class="outline-3">
+<h3 id="org893538d"><span class="section-number-3">4.4.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-4-4">
+</div>
+<div id="outline-container-org8c8890f" class="outline-4">
+<h4 id="org8c8890f"><span class="section-number-4">4.4.1.</span> Nation States</h4>
+<div class="outline-text-4" id="text-4-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgc6059c0"></a>India<br />
+<ol class="org-ol">
+<li><a id="org520f2e3"></a>General<br /></li>
+<li><a id="orgcd27021"></a>STEMM<br />
+<ul class="org-ul">
+<li><a id="orgc504727"></a>Misc<br />
+<div class="outline-text-7" id="text-orgc504727">
+<ul class="org-ul">
+<li>K. Ashok, <b>Masala Lab: The Science of Indian Cooking: The Science of Indian Cooking - the bestseller on food, the definitive book for every Indian kitchen, illustrated.</b> Gurgaon: Penguin, 2020.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org7b32405"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="orgff0419d"></a>History<br />
+<div class="outline-text-7" id="text-orgff0419d">
+<ul class="org-ul">
+<li>C. T. Sen, <i>Feast and Fasts: A History of Food in India, Latest edition.</i> Speaking Tiger, 2016.</li>
+
+<li>K. T. Achaya, <i>A Historical Dictionary of Indian Food.</i> Oxford University Press, 2002.</li>
+
+<li>A. K. T, <i>Indian Food: A Historical Companion, Edition.</i> Delhi: Oxford, 1998.</li>
+
+<li>S. Ved, <i>Whose Samosa is it anyway?: The Story of where “Indian” food really came from.</i> Penguin Random House India Private Limited, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="org61de396"></a>Misc<br />
+<div class="outline-text-7" id="text-org61de396">
+<ul class="org-ul">
+<li>D. Dhingra, “Indian restaurants are reviving the culinary legacy lost during Partition with Pakistani dishes on their menus,” The Hindu, Aug. 15, 2025. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://www.thehindu.com/food/features/indian-restaurants-are-reviving-the-culinary-legacy-lost-during-partition-with-pakistani-dishes-on-their-menus/article69923627.ece">https://www.thehindu.com/food/features/indian-restaurants-are-reviving-the-culinary-legacy-lost-during-partition-with-pakistani-dishes-on-their-menus/article69923627.ece</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org36a09be"></a>Core<br />
+<ul class="org-ul">
+<li><a id="orge934710"></a>Space and Time<br />
+<ul class="org-ul">
+<li><a id="orga3fe891"></a>Geo Classes<br />
+<ul class="org-ul">
+<li><a id="orgf030fa4"></a>Himalayan<br />
+<div class="outline-text-9" id="text-orgf030fa4">
+<ul class="org-ul">
+<li>Himalayan food fest, Sarmoli (Munsiari), Uttarakhand हिमालय भोजन मेला, सरमोली (मुनस्यारी), उत्तराखंड, (Jun. 04, 2024). Accessed: Jun. 05, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=AiGmJXE290I">https://www.youtube.com/watch?v=AiGmJXE290I</a></li>
+<li>“Kumaoni cuisine - Wikipedia.” Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Kumaoni_cuisine">https://en.wikipedia.org/wiki/Kumaoni_cuisine</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>arathimenon, “Wild ways to flavour mountain life, economy,” Mongabay-India. Accessed: Oct. 04, 2025. [Online]. Available: <a href="https://india.mongabay.com/2025/10/wild-ways-to-flavour-mountain-life-economy/">https://india.mongabay.com/2025/10/wild-ways-to-flavour-mountain-life-economy/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org804b9da"></a>Coastal<br />
+<ul class="org-ul">
+<li><a id="org12b4315"></a>General<br /></li>
+<li><a id="orga9a368f"></a>Special Topics<br />
+<div class="outline-text-10" id="text-orga9a368f">
+<ul class="org-ul">
+<li>Food - Goa: <a href="https://tinyurl.com/mrup2ey2">https://tinyurl.com/mrup2ey2</a></li>
+<li>Food - Bengal: <a href="https://tinyurl.com/bdzhbeh9">https://tinyurl.com/bdzhbeh9</a></li>
+<li>Food - Kerala: <a href="https://tinyurl.com/4jyuk29d">https://tinyurl.com/4jyuk29d</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1edbaf0"></a>Misc<br />
+<div class="outline-text-10" id="text-org1edbaf0">
+<ul class="org-ul">
+<li>“Mangalorean cuisine,” Wikipedia. Dec. 15, 2024. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Mangalorean_cuisine&amp;oldid=1263256387">https://en.wikipedia.org/w/index.php?title=Mangalorean_cuisine&amp;oldid=1263256387</a></li>
+
+<li>N. Banerji, “Coastal cuisines,” Down To Earth. Accessed: Aug. 10, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/food/coastal-cuisines">https://www.downtoearth.org.in/food/coastal-cuisines</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org3eee818"></a>Religions, Spirituality, Misc<br /></li>
+<li><a id="orgcbaf6e0"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org881a03d"></a>Regional Classes<br />
+<ul class="org-ul">
+<li><a id="orgd923a5e"></a>India - General<br />
+<div class="outline-text-9" id="text-orgd923a5e">
+<ul class="org-ul">
+<li>“Indian cuisine,” Wikipedia. Jun. 21, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Indian_cuisine&amp;oldid=1296678179">https://en.wikipedia.org/w/index.php?title=Indian_cuisine&amp;oldid=1296678179</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org364fdfa"></a>India - North West<br />
+<ul class="org-ul">
+<li><a id="org388e1fb"></a>Jammu and Kashmir<br />
+<div class="outline-text-10" id="text-org388e1fb">
+<ul class="org-ul">
+<li>Food: <a href="https://tinyurl.com/324vwrt9">https://tinyurl.com/324vwrt9</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge731715"></a>Sindh<br />
+<div class="outline-text-10" id="text-orge731715">
+<ul class="org-ul">
+<li>Food - Sindh: <a href="https://tinyurl.com/4uyy7uap">https://tinyurl.com/4uyy7uap</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org1030595"></a>Uttarakhand<br /></li>
+<li><a id="org207e928"></a>Himachal Pradesh<br /></li>
+<li><a id="org63fab64"></a>Punjab<br />
+<div class="outline-text-10" id="text-org63fab64">
+<ul class="org-ul">
+<li>Food: <a href="https://tinyurl.com/czfj8nb5">https://tinyurl.com/czfj8nb5</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgfded98d"></a>Rajasthan<br />
+<div class="outline-text-10" id="text-orgfded98d">
+<ul class="org-ul">
+<li>Food - Rajasthan: <a href="https://tinyurl.com/3j7rcy2w">https://tinyurl.com/3j7rcy2w</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org6f2d0d6"></a>India NCR<br />
+<div class="outline-text-10" id="text-org6f2d0d6">
+<ul class="org-ul">
+<li>Food: <a href="https://tinyurl.com/yju5jffd">https://tinyurl.com/yju5jffd</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgb487dd7"></a>Haryana<br />
+<div class="outline-text-10" id="text-orgb487dd7">
+<ul class="org-ul">
+<li>Food Haryana: <a href="https://tinyurl.com/rz55rray">https://tinyurl.com/rz55rray</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org254e527"></a>UP<br />
+<div class="outline-text-10" id="text-org254e527">
+<ul class="org-ul">
+<li>Food - Uttar Pradesh: <a href="https://tinyurl.com/57wr9v88">https://tinyurl.com/57wr9v88</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org143f351"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org9b5d030"></a>India - Central Region<br />
+<ul class="org-ul">
+<li><a id="org3e45c3e"></a>Maharashtra<br />
+<div class="outline-text-10" id="text-org3e45c3e">
+<ul class="org-ul">
+<li>“Maharashtrian cuisine,” Wikipedia. Jun. 07, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Maharashtrian_cuisine&amp;oldid=1294456992">https://en.wikipedia.org/w/index.php?title=Maharashtrian_cuisine&amp;oldid=1294456992</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0e9fed9"></a>Gujarat<br />
+<div class="outline-text-10" id="text-org0e9fed9">
+<ul class="org-ul">
+<li>“Gujarati cuisine,” Wikipedia. Mar. 18, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Gujarati_cuisine&amp;oldid=1281150000">https://en.wikipedia.org/w/index.php?title=Gujarati_cuisine&amp;oldid=1281150000</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgff9154a"></a>Goa<br />
+<div class="outline-text-10" id="text-orgff9154a">
+<ul class="org-ul">
+<li>Food - Goa: <a href="https://tinyurl.com/mrup2ey2">https://tinyurl.com/mrup2ey2</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbb95864"></a>DNHandDD<br /></li>
+<li><a id="orgbaf2031"></a>Madhya Pradesh<br /></li>
+<li><a id="org10d965d"></a>Chhattisgarh<br />
+<div class="outline-text-10" id="text-org10d965d">
+<ul class="org-ul">
+<li>“Chhattisgarhi cuisine - Wikipedia.” Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Chhattisgarhi_cuisine">https://en.wikipedia.org/wiki/Chhattisgarhi_cuisine</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org7a8ea99"></a>Odisha<br />
+<div class="outline-text-10" id="text-org7a8ea99">
+<ul class="org-ul">
+<li>“Cuisine of Odisha,” Wikipedia. May 05, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Cuisine_of_Odisha&amp;oldid=1288869570">https://en.wikipedia.org/w/index.php?title=Cuisine_of_Odisha&amp;oldid=1288869570</a></li>
+
+<li>D. Dhingra, “Actor-filmmaker Nandita Das collaborates with Mona Lisa Bal to curate an Odia food pop-up,” The Hindu, Nov. 26, 2024. Accessed: Nov. 28, 2024. [Online]. Available: <a href="https://www.thehindu.com/food/features/actor-filmmaker-nandita-das-champions-her-native-odia-cuisine-with-a-food-pop-up-in-delhi/article68909273.ece">https://www.thehindu.com/food/features/actor-filmmaker-nandita-das-champions-her-native-odia-cuisine-with-a-food-pop-up-in-delhi/article68909273.ece</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge437674"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgbbaeece"></a>India - Southern Peninsula<br />
+<div class="outline-text-9" id="text-orgbbaeece">
+<ul class="org-ul">
+<li>Food - Indian Southern Peninsula: <a href="https://tinyurl.com/tvpytvw8">https://tinyurl.com/tvpytvw8</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge32cd9c"></a>India - East, North East Region<br />
+<ul class="org-ul">
+<li><a id="orgeefe0c3"></a>E<br />
+<ul class="org-ul">
+<li><a id="orgae5c470"></a>Bengal<br />
+<div class="outline-text-11" id="text-orgae5c470">
+<ul class="org-ul">
+<li>Food - Bengal: <a href="https://tinyurl.com/bdzhbeh9">https://tinyurl.com/bdzhbeh9</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd10742e"></a>Bihar<br />
+<div class="outline-text-11" id="text-orgd10742e">
+<ul class="org-ul">
+<li>“Bihari cuisine,” Wikipedia. May 05, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bihari_cuisine&amp;oldid=1288838564">https://en.wikipedia.org/w/index.php?title=Bihari_cuisine&amp;oldid=1288838564</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org0067fad"></a>Jharkhand<br />
+<div class="outline-text-11" id="text-org0067fad">
+<ul class="org-ul">
+<li>“Jharkhandi cuisine - Wikipedia.” Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Jharkhandi_cuisine">https://en.wikipedia.org/wiki/Jharkhandi_cuisine</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgcfada8b"></a>NE<br />
+<ul class="org-ul">
+<li><a id="org904a49c"></a>General<br /></li>
+<li><a id="org056178c"></a>States<br />
+<ul class="org-ul">
+<li><a id="orgd0969f9"></a>Seven Sisters<br />
+<ul class="org-ul">
+<li><a id="orgab8b664"></a>Arunachal Pradesh<br />
+<div class="outline-text-13" id="text-orgab8b664">
+<ul class="org-ul">
+<li>“Arunachali cuisine - Wikipedia.” Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Arunachali_cuisine">https://en.wikipedia.org/wiki/Arunachali_cuisine</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3518e22"></a>Assam<br />
+<div class="outline-text-13" id="text-org3518e22">
+<ul class="org-ul">
+<li>“Assamese cuisine,” Wikipedia. Dec. 06, 2024. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Assamese_cuisine&amp;oldid=1261490178">https://en.wikipedia.org/w/index.php?title=Assamese_cuisine&amp;oldid=1261490178</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org83f4fb8"></a>Meghalaya<br />
+<div class="outline-text-13" id="text-org83f4fb8">
+<ul class="org-ul">
+<li>“Meghalayan cuisine,” Wikipedia. Jun. 17, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Meghalayan_cuisine&amp;oldid=1296038090">https://en.wikipedia.org/w/index.php?title=Meghalayan_cuisine&amp;oldid=1296038090</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orga005133"></a>Tripura<br />
+<div class="outline-text-13" id="text-orga005133">
+<ul class="org-ul">
+<li>“Tripuri cuisine,” Wikipedia. Jan. 13, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Tripuri_cuisine&amp;oldid=1269146508">https://en.wikipedia.org/w/index.php?title=Tripuri_cuisine&amp;oldid=1269146508</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgc31b7a4"></a>Nagaland<br />
+<div class="outline-text-13" id="text-orgc31b7a4">
+<ul class="org-ul">
+<li>“Naga cuisine,” Wikipedia. Jun. 06, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Naga_cuisine&amp;oldid=1294201345">https://en.wikipedia.org/w/index.php?title=Naga_cuisine&amp;oldid=1294201345</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org396b50f"></a>Manipur<br />
+<div class="outline-text-13" id="text-org396b50f">
+<ul class="org-ul">
+<li>“Manipuri cuisine,” Wikipedia. May 05, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Manipuri_cuisine&amp;oldid=1288845984">https://en.wikipedia.org/w/index.php?title=Manipuri_cuisine&amp;oldid=1288845984</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgd26e7c1"></a>Mizoram<br />
+<div class="outline-text-13" id="text-orgd26e7c1">
+<ul class="org-ul">
+<li>“Mizo cuisine,” Wikipedia. May 27, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Mizo_cuisine&amp;oldid=1292617881">https://en.wikipedia.org/w/index.php?title=Mizo_cuisine&amp;oldid=1292617881</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org35fb48b"></a>Bro State<br />
+<ul class="org-ul">
+<li><a id="org4dee373"></a>Sikkim<br />
+<div class="outline-text-13" id="text-org4dee373">
+<ul class="org-ul">
+<li>“Sikkimese cuisine,” Wikipedia. May 24, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Sikkimese_cuisine&amp;oldid=1291982666">https://en.wikipedia.org/w/index.php?title=Sikkimese_cuisine&amp;oldid=1291982666</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org5dc69ea"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org5032180"></a>Texts<br />
+<div class="outline-text-12" id="text-org5032180">
+<ul class="org-ul">
+<li>H. Hauzel, <i>Essential North-East Cookbook.</i> Penguin UK, 2014.</li>
+<li>H. Hoihnu, The Essential North-East Cookbook Hoihnu, Hauzel. Penguin, 2014.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgc6229f6"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org772bcfc"></a>Misc<br />
+<div class="outline-text-9" id="text-org772bcfc">
+<ul class="org-ul">
+<li>A. Dewan, <i>Tiffin: 500 Authentic Recipes Celebrating India’s Regional Cuisine.</i> Running Press Book Publishers, 2018.</li>
+
+<li>“Bhojpuri cuisine,” Wikipedia. May 04, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Bhojpuri_cuisine&amp;oldid=1288823824">https://en.wikipedia.org/w/index.php?title=Bhojpuri_cuisine&amp;oldid=1288823824</a></li>
+<li>“Awadhi cuisine,” Wikipedia. Jun. 20, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Awadhi_cuisine&amp;oldid=1296514483">https://en.wikipedia.org/w/index.php?title=Awadhi_cuisine&amp;oldid=1296514483</a></li>
+<li>“Udupi cuisine,” Wikipedia. Apr. 22, 2025. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Udupi_cuisine&amp;oldid=1286878003">https://en.wikipedia.org/w/index.php?title=Udupi_cuisine&amp;oldid=1286878003</a></li>
+<li>“Malvani cuisine,” Wikipedia. Jun. 25, 2024. Accessed: Jun. 24, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Malvani_cuisine&amp;oldid=1230999778">https://en.wikipedia.org/w/index.php?title=Malvani_cuisine&amp;oldid=1230999778</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org48f648e"></a>Mughlai<br />
+<div class="outline-text-8" id="text-org48f648e">
+<ul class="org-ul">
+<li>Mughlai Food: <a href="https://tinyurl.com/5n6r3m48">https://tinyurl.com/5n6r3m48</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org11b22a0"></a>Misc<br />
+<div class="outline-text-7" id="text-org11b22a0">
+<ul class="org-ul">
+<li>P. Pant, <b>India: The Cookbook.</b> London ; New York: Phaidon Press, 2010.</li>
+<li>P. Pant, Lazzatnama: Recipes of India. Rupa Publications India, 2024.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orga5a525b"></a>Arts<br /></li>
+<li><a id="org45879bc"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org515391a"></a>Love<br />
+<div class="outline-text-7" id="text-org515391a">
+<ul class="org-ul">
+<li>P. Pant, Kama Bhog: Foods of Love, 1st edition. New Delhi: Allied Publishers Pvt Ltd, 2007.</li>
+</ul>
+</div>
+</li>
+<li><a id="org03cd9ec"></a>Texts<br />
+<div class="outline-text-7" id="text-org03cd9ec">
+<ul class="org-ul">
+<li>P. Srinivasan, Pure Vegatarian. HarperCollins India, 2024.</li>
+<li>P. Pant and L. and M. H. Hamilton, The Indian Vegetarian Cookbook, Illustrated edition. London: Phaidon Press, 2018.</li>
+<li>N. Iyer, THE EVERYDAY HEALTHY VEGETARIAN. Gurugram, India: HACHETTE INDIA, 2017.</li>
+<li>A. K. T.R, Feast on a Leaf: The Onam Sadhya Cookbook. Bloomsbury India, 2024.</li>
+<li>India: Cookbook &amp; The Indian Vegetarian Cookbook.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org20f3471"></a>Misc<br />
+<div class="outline-text-6" id="text-4-4-1-1-7">
+<ul class="org-ul">
+<li>P. Pant, “Pushpent Pant writes about the delectable cuisine of the Kumaon-Garhwal hills where he grew up,” Scroll.in. Accessed: Sep. 18, 2025. [Online]. Available: <a href="https://scroll.in/article/1086192/pushpent-pant-writes-about-the-delectable-cuisine-of-the-kumaon-garhwal-hills-where-he-grew-up">https://scroll.in/article/1086192/pushpent-pant-writes-about-the-delectable-cuisine-of-the-kumaon-garhwal-hills-where-he-grew-up</a></li>
+
+<li>“Should India expand push for gas stoves? Health study finds few benefits, complicating picture.” Accessed: Jan. 30, 2025. [Online]. Available: <a href="https://www.science.org/content/article/should-india-expand-push-gas-stoves-health-study-finds-few-benefits-complicating">https://www.science.org/content/article/should-india-expand-push-gas-stoves-health-study-finds-few-benefits-complicating</a></li>
+
+<li>K. Ratna, “Does Rasam Hold the Secret to Transforming A Glum Day Into A Flavourful Experience?,” Frontline. Accessed: Dec. 16, 2024. [Online]. Available: <a href="https://frontline.thehindu.com/columns/rasam-hing-roman-cooking-asafoetida-umami-perungayam-kitchen-stories/article68972559.ece">https://frontline.thehindu.com/columns/rasam-hing-roman-cooking-asafoetida-umami-perungayam-kitchen-stories/article68972559.ece</a></li>
+
+<li>P. Srinivasan, “This cookbook traces the history and purpose of traditional utensils used in South Indian cooking,” Scroll.in. Accessed: Sep. 04, 2024. [Online]. Available: <a href="https://scroll.in/article/1072788/this-cookbook-traces-the-history-and-purpose-of-traditional-utensils-used-in-south-indian-cooking">https://scroll.in/article/1072788/this-cookbook-traces-the-history-and-purpose-of-traditional-utensils-used-in-south-indian-cooking</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>P. Qureshi, “A new book brings a Rampur family’s culinary history and cherished recipes created by the matriarch,” Scroll.in. Accessed: Jul. 04, 2025. [Online]. Available: <a href="https://scroll.in/article/1083373/a-new-book-brings-a-rampur-familys-culinary-history-and-cherished-recipes-created-by-the-matriarch">https://scroll.in/article/1083373/a-new-book-brings-a-rampur-familys-culinary-history-and-cherished-recipes-created-by-the-matriarch</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orge344a47"></a>Italian<br />
+<div class="outline-text-5" id="text-4-4-1-2">
+<ul class="org-ul">
+<li>Food - Italy: <a href="https://tinyurl.com/3fnamjwm">https://tinyurl.com/3fnamjwm</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8027f4b"></a>Mexican<br />
+<div class="outline-text-5" id="text-4-4-1-3">
+<ul class="org-ul">
+<li>Food - Mexico: <a href="https://tinyurl.com/43rmxfpu">https://tinyurl.com/43rmxfpu</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org5cd1ec6"></a>USA<br />
+<ol class="org-ol">
+<li><a id="org778aea9"></a>General<br /></li>
+<li><a id="orgb1b5097"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="org5781d34"></a>Indigenous People<br />
+<div class="outline-text-7" id="text-org5781d34">
+<ul class="org-ul">
+<li>S. Sherman, The Sioux Chef’s Indigenous Kitchen. Minneapolis: University of Minnesota Press, 2017.</li>
+<li>“The Sioux Chef’s Indigenous Kitchen,” Wikipedia. Jun. 28, 2025. Accessed: Nov. 30, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=The_Sioux_Chef%27s_Indigenous_Kitchen&amp;oldid=1297747380">https://en.wikipedia.org/w/index.php?title=The_Sioux_Chef%27s_Indigenous_Kitchen&amp;oldid=1297747380</a></li>
+<li>S. Sherman, K. Nelson, and K. Donnelly, Turtle Island: Foods and Traditions of the Indigenous Peoples of North America. Clarkson Potter, 2025.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgda7bee9"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org90aedc4" class="outline-4">
+<h4 id="org90aedc4"><span class="section-number-4">4.4.2.</span> Racial Classes</h4>
+<div class="outline-text-4" id="text-4-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org42787a6"></a>Chinkyish<br />
+<div class="outline-text-5" id="text-4-4-2-1">
+<ul class="org-ul">
+<li>Yellow Cuisines: <a href="https://tinyurl.com/33uy4xy5">https://tinyurl.com/33uy4xy5</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org4ee1e83" class="outline-3">
+<h3 id="org4ee1e83"><span class="section-number-3">4.5.</span> Business Studies, Misc</h3>
+</div>
+<div id="outline-container-org0e68b7b" class="outline-3">
+<h3 id="org0e68b7b"><span class="section-number-3">4.6.</span> Humanities, Misc</h3>
+</div>
+<div id="outline-container-org93c8fd9" class="outline-3">
+<h3 id="org93c8fd9"><span class="section-number-3">4.7.</span> Security Studies, Misc</h3>
+</div>
+<div id="outline-container-org38a6c7b" class="outline-3">
+<h3 id="org38a6c7b"><span class="section-number-3">4.8.</span> Communication, Misc</h3>
+</div>
+<div id="outline-container-org0588a50" class="outline-3">
+<h3 id="org0588a50"><span class="section-number-3">4.9.</span> Misc</h3>
+</div>
+</div>
+<div id="outline-container-org9fc367c" class="outline-2">
+<h2 id="org9fc367c"><span class="section-number-2">5.</span> Core</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>I. S. Rombauer, M. R. Becker, E. Becker, J. Becker, and M. Scott, <b>Joy of Cooking: 2019 Edition Fully Revised and Updated.</b> Simon and Schuster, 2019.</li>
+<li>S. Nosrat, <b>Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking.</b> Canongate Books, 2017.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga221bd2" class="outline-2">
+<h2 id="orga221bd2"><span class="section-number-2">6.</span> Arts</h2>
+<div class="outline-text-2" id="text-6">
+<ul class="org-ul">
+<li>Powster, “The Taste of Things | Official Website | February 09 2024,” The Taste of Things | Official Website | February 09 2024. Accessed: Apr. 23, 2024. [Online]. Available: <a href="https://www.tasteofthings.com/">https://www.tasteofthings.com/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org2354e08" class="outline-2">
+<h2 id="org2354e08"><span class="section-number-2">7.</span> Special Topics</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org25d0154" class="outline-3">
+<h3 id="org25d0154"><span class="section-number-3">7.1.</span> Veg Food</h3>
+<div class="outline-text-3" id="text-7-1">
+</div>
+<div id="outline-container-org4961fcb" class="outline-4">
+<h4 id="org4961fcb"><span class="section-number-4">7.1.1.</span> General</h4>
+</div>
+<div id="outline-container-org3f7d484" class="outline-4">
+<h4 id="org3f7d484"><span class="section-number-4">7.1.2.</span> STEMM</h4>
+<div class="outline-text-4" id="text-7-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org675a1a8"></a>Environment, Ecology<br />
+<div class="outline-text-5" id="text-7-1-2-1">
+<ul class="org-ul">
+<li>A. Trauger, “The vegan industrial complex: the political ecology of not eating animals,” Journal of Political Ecology, vol. 29, no. 1, Art. no. 1, Oct. 2022, doi: 10.2458/jpe.3052.</li>
+<li>U. of Georgia, “Veganism may not save the planet: Study suggests limited meat consumption better for environment, animals.” Accessed: Mar. 19, 2025. [Online]. Available: <a href="https://phys.org/news/2023-02-veganism-planet-limited-meat-consumption.html">https://phys.org/news/2023-02-veganism-planet-limited-meat-consumption.html</a></li>
+
+<li>“Climatarian, flexitarian, vegetarian, vegan: Which diet is best for the planet? (And what do they mean?),” ideas.ted.com. Accessed: Oct. 06, 2022. [Online]. Available: <a href="https://ideas.ted.com/which-diet-is-better-for-climate-change-vegan-vegetarian-climatarian-flexitarian/">https://ideas.ted.com/which-diet-is-better-for-climate-change-vegan-vegetarian-climatarian-flexitarian/</a></li>
+<li>P. Scarborough et al., “Vegans, vegetarians, fish-eaters and meat-eaters in the UK show discrepant environmental impacts,” Nat Food, pp. 1–10, Jul. 2023, doi: 10.1038/s43016-023-00795-w.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgc32d472"></a>Health<br />
+<div class="outline-text-5" id="text-7-1-2-2">
+<ul class="org-ul">
+<li>A. Stubbendorff and M. Wolff, “Low iron is common in teenage girls – with vegans and vegetarians at greatest risk, according to our research in Sweden,” The Conversation. Accessed: Apr. 17, 2025. [Online]. Available: <a href="http://theconversation.com/low-iron-is-common-in-teenage-girls-with-vegans-and-vegetarians-at-greatest-risk-according-to-our-research-in-sweden-253878">http://theconversation.com/low-iron-is-common-in-teenage-girls-with-vegans-and-vegetarians-at-greatest-risk-according-to-our-research-in-sweden-253878</a></li>
+<li>U. of Surrey, “Processed plant-based meat alternatives linked to depression risk in vegetarians.” Accessed: Dec. 19, 2024. [Online]. Available: <a href="https://medicalxpress.com/news/2024-12-based-meat-alternatives-linked-depression.html">https://medicalxpress.com/news/2024-12-based-meat-alternatives-linked-depression.html</a></li>
+<li>OCA, “Organic Bytes Newsletter #882: Fake Meat Linked to Depression,” Organic Consumers. Accessed: Feb. 08, 2025. [Online]. Available: <a href="https://organicconsumers.org/organic-bytes-newsletter-882-fake-meat-linked-to-depression/">https://organicconsumers.org/organic-bytes-newsletter-882-fake-meat-linked-to-depression/</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org65d1579"></a>Data Science<br />
+<div class="outline-text-5" id="text-7-1-2-3">
+<ul class="org-ul">
+<li>“What share of people are vegetarian, vegan, or flexitarian?,” Our World in Data. Accessed: May 14, 2022. [Online]. Available: <a href="https://ourworldindata.org/vegetarian-vegan">https://ourworldindata.org/vegetarian-vegan</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org48dc97d" class="outline-4">
+<h4 id="org48dc97d"><span class="section-number-4">7.1.3.</span> Worldly Matters</h4>
+<div class="outline-text-4" id="text-7-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org094566b"></a>Space and Time<br />
+<ol class="org-ol">
+<li><a id="org1297782"></a>History<br />
+<div class="outline-text-6" id="text-7-1-3-1-1">
+<ul class="org-ul">
+<li>M. D. Conversation The, “What did ancient Greek and Roman philosophers think about vegetarianism?,” Scroll.in. Accessed: Nov. 29, 2024. [Online]. Available: <a href="https://scroll.in/article/1076110/what-did-ancient-greek-and-roman-philosophers-think-about-vegetarianism">https://scroll.in/article/1076110/what-did-ancient-greek-and-roman-philosophers-think-about-vegetarianism</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org7189057"></a>Religions, Spirituality, Misc<br />
+<ol class="org-ol">
+<li><a id="org233ff0b"></a>Buddhism<br />
+<div class="outline-text-6" id="text-7-1-3-2-1">
+<ul class="org-ul">
+<li>P. Pant, Buddhist Peace Recipes. New Delhi: Lustre, 2004.</li>
+</ul>
+</div>
+</li>
+<li><a id="org039c57a"></a>Misc<br />
+<div class="outline-text-6" id="text-7-1-3-2-2">
+<ul class="org-ul">
+<li>“Jain vegetarianism,” Wikipedia. Jun. 08, 2025. Accessed: Jul. 09, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Jain_vegetarianism&amp;oldid=1294522385">https://en.wikipedia.org/w/index.php?title=Jain_vegetarianism&amp;oldid=1294522385</a></li>
+
+<li>S. G. Tilak, “A merry (meatless) Christmas,” The Hindu, Dec. 20, 2024. Accessed: Dec. 22, 2024. [Online]. Available: <a href="https://www.thehindu.com/food/features/merry-meatless-christmas-vegan-vegetarian-feast/article68998627.ece">https://www.thehindu.com/food/features/merry-meatless-christmas-vegan-vegetarian-feast/article68998627.ece</a></li>
+
+<li>L. Alsdorf, The History of Vegetarianism and Cow-Veneration in India. Routledge, 2010.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org0616983" class="outline-4">
+<h4 id="org0616983"><span class="section-number-4">7.1.4.</span> Core</h4>
+<div class="outline-text-4" id="text-7-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgc512a73"></a>Variants<br />
+<ol class="org-ol">
+<li><a id="orgc58dabf"></a>Space and Time<br />
+<ul class="org-ul">
+<li><a id="orge5801a6"></a>Regional Classes<br />
+<ul class="org-ul">
+<li><a id="org62167ec"></a>Middle East<br />
+<div class="outline-text-8" id="text-org62167ec">
+<ul class="org-ul">
+<li>S. Abourezk, Vegetarian Mediterranean Cookbook: 125+ Simple, Healthy Recipes for Living Well. Naperville: Callisto Media, 2020.</li>
+<li>S. Hage, The Levantine Vegetarian: Recipes from the Middle East. London: Phaidon Inc Ltd, 2024.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org1d68a38"></a>Religions, Spirituality, Misc<br />
+<ul class="org-ul">
+<li><a id="org3388e80"></a>Vaishnav Food<br />
+<ul class="org-ul">
+<li><a id="org2bf21a0"></a>ISKCON<br />
+<div class="outline-text-8" id="text-org2bf21a0">
+<ul class="org-ul">
+<li>R. Das, <i>Yogiplate: The Fundamentals of Sattvic Food.</i> Penguin Random House India Private Limited, 2021.</li>
+
+<li>A. Dasa, <i>Hare Krishna Book of Vegetarian Cooking.</i> Mumbai: Bhaktivedanta Book Trust, 2014.</li>
+<li>K. P. D. Dasi, Devotional Dishes. The Bhaktivedanta Book Trust, 2014.</li>
+<li>C. Stammers, The Book of Egg Free Cakes. Bhaktivedanta Book Trust, 2001.</li>
+</ul>
+</div>
+</li>
+<li><a id="org8e847fe"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="org22789d9"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orge6571d8"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="orgc0a41ce"></a>India<br />
+<ul class="org-ul">
+<li><a id="org50ddaa1"></a>General<br /></li>
+<li><a id="org1230a51"></a>Worldly Matters<br />
+<ul class="org-ul">
+<li><a id="org870da1f"></a>Space and Time<br />
+<ul class="org-ul">
+<li><a id="org3d02426"></a>History<br />
+<div class="outline-text-10" id="text-org3d02426">
+<ul class="org-ul">
+<li>“Book Excerpt: Ashoka, the ‘vegetarian king.’” Accessed: Mar. 03, 2024. [Online]. Available: <a href="https://www.downtoearth.org.in/reviews/book-excerpt-ashoka-the-vegetarian-king--94772">https://www.downtoearth.org.in/reviews/book-excerpt-ashoka-the-vegetarian-king--94772</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org4e5262a"></a>Religions, Spirituality, Misc<br /></li>
+<li><a id="org89e8a7f"></a>Humanities, Misc<br /></li>
+<li><a id="org4c1eebb"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="org4f3074a"></a>Misc<br />
+<div class="outline-text-10" id="text-org4f3074a">
+<ul class="org-ul">
+<li>“The Sangh’s Sustained Campaign Against Non-Veg Food is a Step Towards Becoming a Hindu Pakistan,” The Wire. Accessed: Apr. 12, 2025. [Online]. Available: <a href="https://thewire.in/communalism/the-sanghs-sustained-campaign-against-non-veg-food-is-a-step-towards-becoming-a-hindu-pakistan">https://thewire.in/communalism/the-sanghs-sustained-campaign-against-non-veg-food-is-a-step-towards-becoming-a-hindu-pakistan</a></li>
+
+<li>A. Butani, “DPS Gautam Buddh Nagar implements no non-veg rule, parents call move ‘discriminatory,’” The Hindu, Aug. 07, 2024. Accessed: Aug. 09, 2024. [Online]. Available: <a href="https://www.thehindu.com/news/cities/Delhi/dps-gautam-buddh-nagar-implements-no-non-veg-rule-parents-call-move-discriminatory/article68497523.ece">https://www.thehindu.com/news/cities/Delhi/dps-gautam-buddh-nagar-implements-no-non-veg-rule-parents-call-move-discriminatory/article68497523.ece</a></li>
+
+<li>A. Pandey, “Vegetarian Vigilance Of Zomato’s ‘Pure Veg’ Fleet: A Recipe For Social Division?,” Feminism in India. Accessed: Mar. 27, 2024. [Online]. Available: <a href="https://feminisminindia.com/2024/03/27/vegetarian-vigilance-of-zomatos-pure-veg-fleet-a-recipe-for-social-division/">https://feminisminindia.com/2024/03/27/vegetarian-vigilance-of-zomatos-pure-veg-fleet-a-recipe-for-social-division/</a></li>
+<li>V. Sanzgiri, “Green Deliveries: Zomato Revisits Veg Fleet Plan Amid Criticism,” MediaNama. Accessed: Mar. 21, 2024. [Online]. Available: <a href="https://www.medianama.com/2024/03/223-green-deliveries-zomato-revisits-veg-fleet-plan-amid-criticism/">https://www.medianama.com/2024/03/223-green-deliveries-zomato-revisits-veg-fleet-plan-amid-criticism/</a></li>
+<li>“Zomato Announces ‘Pure Veg’ Delivery Fleet, Revokes Colour Segregation After Blowback,” The Wire. Accessed: Mar. 21, 2024. [Online]. Available: <a href="https://thewire.in/business/zomato-announces-pure-veg-delivery-fleet-revokes-colour-segregation-after-blowback">https://thewire.in/business/zomato-announces-pure-veg-delivery-fleet-revokes-colour-segregation-after-blowback</a></li>
+<li>A. Deb, “Why Zomato’s ‘pure veg’ service is being criticised as casteist,” Scroll.in. Accessed: Mar. 21, 2024. [Online]. Available: <a href="https://scroll.in/article/1065529/why-zomatos-pure-veg-service-is-being-criticised-as-casteist">https://scroll.in/article/1065529/why-zomatos-pure-veg-service-is-being-criticised-as-casteist</a></li>
+<li>“Zomato Announces ‘Pure Veg’ Delivery Fleet, Revokes Colour Segregation After Blowback,” The Wire. Accessed: Mar. 20, 2024. [Online]. Available: <a href="https://thewire.in/business/zomato-announces-pure-veg-delivery-fleet-revokes-colour-segregation-after-blowback">https://thewire.in/business/zomato-announces-pure-veg-delivery-fleet-revokes-colour-segregation-after-blowback</a></li>
+
+<li>“IIT-B’s ‘vegetarian tables’ policy: Vegetarianism of purity promotes segregation, hierarchy and even violence,” The Indian Express. Accessed: Oct. 11, 2023. [Online]. Available: <a href="https://indianexpress.com/article/opinion/columns/iit-bombay-vegetarianism-segregation-hierarchy-violence-8976874/">https://indianexpress.com/article/opinion/columns/iit-bombay-vegetarianism-segregation-hierarchy-violence-8976874/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org15577df"></a>Special Topics<br />
+<ul class="org-ul">
+<li><a id="orgb092761"></a>Texts<br />
+<ul class="org-ul">
+<li><a id="org5000eb3"></a>South India<br />
+<div class="outline-text-10" id="text-org5000eb3">
+<ul class="org-ul">
+<li>C. Padmanabhan, Dakshin: Vegetarian Cuisine from South India. Westland, 2023.</li>
+<li>P. Srinivasan, Pure Vegatarian. HarperCollins India, 2024.</li>
+<li>S. S. Rajan, Bhog Naivedya: Food Offerings To The Gods. New Delhi: Rupa Publications India, 2021.</li>
+</ul>
+</div>
+</li>
+<li><a id="org570ffa6"></a>Misc<br />
+<div class="outline-text-10" id="text-org570ffa6">
+<ul class="org-ul">
+<li>India: Cookbook &amp; The Indian Vegetarian Cookbook.</li>
+<li>P. Pant and L. and M. H. Hamilton, <b>The Indian Vegetarian Cookbook, Illustrated Edition.</b> Phaidon Press, 2018.</li>
+<li>C. Makan, Chetna’s Healthy Indian: Vegetarian: Everyday Veg and Vegan Feasts Effortlessly Good for You, Illustrated edition. London: Mitchell Beazley, 2020.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgc57ec61"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgf13d342"></a>Mexican<br />
+<div class="outline-text-7" id="text-orgf13d342">
+<ul class="org-ul">
+<li>M. C. Arronte, Mexican Vegetarian Cookbook: 400 authentic everyday recipes for the home cook. Phaidon Press Ltd, 2022.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgf52f305" class="outline-4">
+<h4 id="orgf52f305"><span class="section-number-4">7.1.5.</span> Special Topics</h4>
+<div class="outline-text-4" id="text-7-1-5">
+</div>
+<ol class="org-ol">
+<li><a id="org7dae861"></a>Texts<br />
+<div class="outline-text-5" id="text-7-1-5-1">
+<ul class="org-ul">
+<li>N. Iyer, The Everyday Healthy Vegetarian. Gurugram, India: Hachette India, 2017.</li>
+<li>P. Srinivasan, Pure Vegatarian. HarperCollins India, 2024.</li>
+<li>DK, The Vegetarian Cookbook. DK Children, 2019.</li>
+<li>H. Kang, The Vegetarian by Han Kang, Winner of the 2024 Nobel Prize in Literature, Latest edition. London: Random House, 2016.</li>
+</ul>
+</div>
+</li>
+<li><a id="orgf63493c"></a>Articles, Essays<br />
+<div class="outline-text-5" id="text-7-1-5-2">
+<ul class="org-ul">
+<li>“68 warming vegetarian recipes for cooler nights,” delicious.com.au. Accessed: Dec. 16, 2021. [Online]. Available: <a href="https://www.delicious.com.au/recipes/collections/gallery/68-warming-vegetarian-recipes-for-cooler-nights/8y4aw3xv">https://www.delicious.com.au/recipes/collections/gallery/68-warming-vegetarian-recipes-for-cooler-nights/8y4aw3xv</a></li>
+<li>“How I Defected from Vegetarianism,” The India Forum. Accessed: Mar. 23, 2024. [Online]. Available: <a href="https://www.theindiaforum.in/society/how-i-defected-vegetarianism">https://www.theindiaforum.in/society/how-i-defected-vegetarianism</a></li>
+<li>D. Weingarten, “How a Former Vegetarian Became a Butcher and Ethical Meat Advocate,” Civil Eats. Accessed: Apr. 17, 2023. [Online]. Available: <a href="https://civileats.com/2016/05/27/how-a-former-vegetarian-became-a-butcher-and-ethical-meat-advocate/">https://civileats.com/2016/05/27/how-a-former-vegetarian-became-a-butcher-and-ethical-meat-advocate/</a></li>
+<li>“How to go vegetarian or vegan | Psyche Guides,” Psyche. Accessed: Nov. 17, 2022. [Online]. Available: <a href="https://psyche.co/guides/how-to-make-a-healthy-transition-to-a-vegetarian-or-vegan-diet">https://psyche.co/guides/how-to-make-a-healthy-transition-to-a-vegetarian-or-vegan-diet</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org1b9c545" class="outline-4">
+<h4 id="org1b9c545"><span class="section-number-4">7.1.6.</span> Misc</h4>
+<div class="outline-text-4" id="text-7-1-6">
+<ul class="org-ul">
+<li>S. Samuel, “Can’t commit to vegetarianism but want animals to suffer less? You’ve got options.,” Vox. Accessed: Aug. 25, 2025. [Online]. Available: <a href="https://www.vox.com/future-perfect/422275/vegan-vegetarian-diet-health-animal-suffering">https://www.vox.com/future-perfect/422275/vegan-vegetarian-diet-health-animal-suffering</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org8ebfb8c" class="outline-2">
+<h2 id="org8ebfb8c"><span class="section-number-2">8.</span> Misc</h2>
+<div class="outline-text-2" id="text-8">
+<ul class="org-ul">
+<li>“Pluralistic: Cooking in Maximum Security (24 Nov 2025) – Pluralistic: Daily links from Cory Doctorow.” Accessed: Nov. 26, 2025. [Online]. Available: <a href="https://pluralistic.net/2025/11/24/moca-moka/">https://pluralistic.net/2025/11/24/moca-moka/</a></li>
+
+<li>Paco, “Op-ed: Let’s Preserve Our Communities Through Canning Food,” Organic Consumers. Accessed: Nov. 06, 2025. [Online]. Available: <a href="https://organicconsumers.org/op-ed-lets-preserve-our-communities-through-canning-food/">https://organicconsumers.org/op-ed-lets-preserve-our-communities-through-canning-food/</a></li>
+
+<li>“Modernist Cuisine,” Modernist Cuisine. Accessed: Nov. 09, 2025. [Online]. Available: <a href="https://modernistcuisine.com/books/modernist-cuisine/">https://modernistcuisine.com/books/modernist-cuisine/</a></li>
+
+<li>V. Varshney, “Sour goodness,” Down To Earth. Accessed: Jun. 14, 2025. [Online]. Available: <a href="https://www.downtoearth.org.in/wildlife-biodiversity/sour-goodness">https://www.downtoearth.org.in/wildlife-biodiversity/sour-goodness</a></li>
+
+<li>“Amazon.com: Glass Food Container Set with Glass Lid, Large Size 3 Pack, Glass Food Storage Containers with Silicone Framed Glass Lid, Glass Food Containers with Airtight Lids, Leakproof, 100% Plastic Free: Home &amp; Kitchen.” Accessed: Jan. 25, 2025. [Online]. Available: <a href="https://www.amazon.com/dp/B0C332F863">https://www.amazon.com/dp/B0C332F863</a></li>
+
+<li>“Humble Book Bundle: Fandom &amp; Pop Culture Cookbooks Encore,” Humble Bundle. Accessed: Dec. 17, 2024. [Online]. Available: <a href="https://www.humblebundle.com/books/fandom-pop-culture-cookbooks-books-encore">https://www.humblebundle.com/books/fandom-pop-culture-cookbooks-books-encore</a></li>
+
+<li>“Learning to cook taught me that self-care isn’t selfish | Psyche Ideas,” Psyche. Accessed: Jul. 03, 2024. [Online]. Available: <a href="https://psyche.co/ideas/learning-to-cook-taught-me-that-self-care-isnt-selfish">https://psyche.co/ideas/learning-to-cook-taught-me-that-self-care-isnt-selfish</a></li>
+
+<li>D. Wolfe, “How to properly wash fruits and vegetables,” Popular Science. Accessed: Jul. 01, 2024. [Online]. Available: <a href="https://www.popsci.com/health/how-to-wash-fruits-and-vegetables/">https://www.popsci.com/health/how-to-wash-fruits-and-vegetables/</a></li>
+
+<li>J. Potter, Cooking for Geeks: Real Science, Great Hacks, and Good Food. O’Reilly Media, Inc., 2010.</li>
+</ul>
+
+<hr />
+
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/disclaimer.html">Disclaimer</a>
+</p>
+
+
+<hr />
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://eyememyself.github.io">OurManyOrgs</a></p>
+<p class="date">Created: 2026-05-01 Fri 12:31</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
