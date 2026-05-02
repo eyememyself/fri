@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2026-05-02 Sat 14:34 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dance</title>
+<meta name="author" content="Staff Member(s), [[https://eyememyself.github.io][OurManyOrgs]]" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Dance</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org2bc0e7c">1. General</a></li>
+<li><a href="#orgef00604">2. Philosophy</a></li>
+<li><a href="#org32bfecd">3. STEMM</a>
+<ul>
+<li><a href="#org2614005">3.1. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgb04620d">4. Worldly Matters</a>
+<ul>
+<li><a href="#orgfa7a344">4.1. SocioPolitical Studies, Law, Misc</a>
+<ul>
+<li><a href="#org28e7730">4.1.1. Politics</a></li>
+<li><a href="#org73980de">4.1.2. Bad Sex</a></li>
+</ul>
+</li>
+<li><a href="#org3d7a1da">4.2. Religions, Spirituality, Misc</a></li>
+<li><a href="#orge4df09a">4.3. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org67da04d">5. Core</a>
+<ul>
+<li><a href="#org82e205a">5.1. Dance Forms</a>
+<ul>
+<li><a href="#org5b5eb2a">5.1.1. General</a></li>
+<li><a href="#org9f371b3">5.1.2. Western Dances</a></li>
+<li><a href="#org8135d70">5.1.3. Middle Eastern Dances</a></li>
+<li><a href="#org4d4f0bd">5.1.4. Indian Dances</a></li>
+<li><a href="#orgfc16d18">5.1.5. Pop</a></li>
+<li><a href="#org9f5698b">5.1.6. Misc</a></li>
+</ul>
+</li>
+<li><a href="#org3df8546">5.2. Education, Research</a></li>
+</ul>
+</li>
+<li><a href="#org40110ac">6. Arts</a>
+<ul>
+<li><a href="#orgdbf23be">6.1. Music</a>
+<ul>
+<li><a href="#org6343c4f">6.1.1. Dance Music</a></li>
+</ul>
+</li>
+<li><a href="#org9297802">6.2. Misc</a></li>
+</ul>
+</li>
+<li><a href="#orgcc6363b">7. Special Topics</a></li>
+<li><a href="#orgd3c9da7">8. Misc</a>
+<ul>
+<li><a href="#org378c60e">8.1. Misc</a></li>
+<li><a href="#org20b82d2">8.2. Articles, Essays</a></li>
+<li><a href="#org24d99a6">8.3. Institute for Advanced Study</a></li>
+<li><a href="#org800e2e1">8.4. Internet Resources</a></li>
+<li><a href="#orgc26037c">8.5. Texts</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<hr />
+<div id="outline-container-org2bc0e7c" class="outline-2">
+<h2 id="org2bc0e7c"><span class="section-number-2">1.</span> General</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>“Dance,” Wikipedia. May 29, 2025. Accessed: Jun. 13, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dance&amp;oldid=1292974493">https://en.wikipedia.org/w/index.php?title=Dance&amp;oldid=1292974493</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgef00604" class="outline-2">
+<h2 id="orgef00604"><span class="section-number-2">2.</span> Philosophy</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>A. Bresnahan, “The Philosophy of Dance,” in The Stanford Encyclopedia of Philosophy, Fall 2020., E. N. Zalta, Ed., Metaphysics Research Lab, Stanford University, 2020. Accessed: Jan. 06, 2025. [Online]. Available: <a href="https://plato.stanford.edu/archives/fall2020/entries/dance/">https://plato.stanford.edu/archives/fall2020/entries/dance/</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org32bfecd" class="outline-2">
+<h2 id="org32bfecd"><span class="section-number-2">3.</span> STEMM</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org2614005" class="outline-3">
+<h3 id="org2614005"><span class="section-number-3">3.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>“Improving Dance by Getting Stronger | Emily Socolinsky,” Starting Strength. Accessed: Aug. 20, 2025. [Online]. Available: <a href="https://startingstrength.com/training/improving-dance-by-getting-stronger">https://startingstrength.com/training/improving-dance-by-getting-stronger</a></li>
+
+<li>T. Editors, “The Intersection of Dance and Science,” JSTOR Daily. Accessed: Jul. 31, 2025. [Online]. Available: <a href="https://daily.jstor.org/the-intersection-of-dance-and-science/">https://daily.jstor.org/the-intersection-of-dance-and-science/</a></li>
+
+<li>In: 2025, ALGEBRA, N. Theory, C. G. T. Games, M. Strip, and TORUS, “This Queen Loves to Tango!,” Feature Column. Accessed: Jul. 08, 2025. [Online]. Available: <a href="https://mathvoices.ams.org/featurecolumn/2025/07/01/this-queen-loves-to-tango/">https://mathvoices.ams.org/featurecolumn/2025/07/01/this-queen-loves-to-tango/</a></li>
+
+<li>S. Sen, “International Yoga Day: Odissi exponent Surupa Sen on how dance and yoga nourish the body and the mind,” The Hindu, Jun. 19, 2025. Accessed: Jun. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/odissi-exponent-surupa-sen-on-how-dance-and-yoga-nourish-the-body-and-the-mind/article69708900.ece">https://www.thehindu.com/entertainment/dance/odissi-exponent-surupa-sen-on-how-dance-and-yoga-nourish-the-body-and-the-mind/article69708900.ece</a></li>
+<li>“Dance and health,” Wikipedia. Jun. 15, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dance_and_health&amp;oldid=1295744164">https://en.wikipedia.org/w/index.php?title=Dance_and_health&amp;oldid=1295744164</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>“Dance technology,” Wikipedia. Sep. 22, 2024. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dance_technology&amp;oldid=1247059274">https://en.wikipedia.org/w/index.php?title=Dance_technology&amp;oldid=1247059274</a></li>
+<li>“Dance science,” Wikipedia. Jun. 15, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dance_science&amp;oldid=1295746024">https://en.wikipedia.org/w/index.php?title=Dance_science&amp;oldid=1295746024</a></li>
+</ul>
+
+
+
+<ul class="org-ul">
+<li>OCA, “Here’s Why Dancing Is the Best Exercise To Improve Mental Health,” Organic Consumers. Accessed: Dec. 30, 2024. [Online]. Available: <a href="https://organicconsumers.org/heres-why-dancing-is-the-best-exercise-to-improve-mental-health/">https://organicconsumers.org/heres-why-dancing-is-the-best-exercise-to-improve-mental-health/</a></li>
+
+<li>A. Demming, “Dancing humans embody topological properties,” Physics World. Accessed: Sep. 12, 2024. [Online]. Available: <a href="https://physicsworld.com/dancing-humans-embody-topological-properties/">https://physicsworld.com/dancing-humans-embody-topological-properties/</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgb04620d" class="outline-2">
+<h2 id="orgb04620d"><span class="section-number-2">4.</span> Worldly Matters</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgfa7a344" class="outline-3">
+<h3 id="orgfa7a344"><span class="section-number-3">4.1.</span> SocioPolitical Studies, Law, Misc</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org28e7730" class="outline-4">
+<h4 id="org28e7730"><span class="section-number-4">4.1.1.</span> Politics</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<ul class="org-ul">
+<li>M. Haider, “How dancer Sheema Kermani defied Pakistan’s conservatives to infuse her art with activism,” Scroll.in. <a href="https://scroll.in/article/1028122/how-dancer-sheema-kermani-defied-pakistans-conservatives-to-infuse-her-art-with-activism">https://scroll.in/article/1028122/how-dancer-sheema-kermani-defied-pakistans-conservatives-to-infuse-her-art-with-activism</a> (accessed Jul. 18, 2022).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org73980de" class="outline-4">
+<h4 id="org73980de"><span class="section-number-4">4.1.2.</span> Bad Sex</h4>
+<div class="outline-text-4" id="text-4-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org5ed7a54"></a>General<br /></li>
+<li><a id="orgdcd1d03"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org086c90a"></a>SocioPolitical Studies, Law, Misc<br />
+<ul class="org-ul">
+<li><a id="orgc7d9ebf"></a>India<br />
+<div class="outline-text-7" id="text-orgc7d9ebf">
+<ul class="org-ul">
+<li>A. Dhillon, “India’s classical music and dance ‘guru’ system hit by abuse allegations,” The Guardian, Oct. 01, 2020. Accessed: Jan. 16, 2023. [Online]. Available: <a href="https://www.theguardian.com/global-development/2020/oct/01/indias-classical-music-and-dance-guru-system-hit-by-abuse-allegations">https://www.theguardian.com/global-development/2020/oct/01/indias-classical-music-and-dance-guru-system-hit-by-abuse-allegations</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgdd59756"></a>Business Studies, Misc<br />
+<div class="outline-text-6" id="text-4-1-2-2-2">
+<ul class="org-ul">
+<li>“Influential dance company bred culture of sex, silence, dancers say,” PBS NewsHour, Apr. 20, 2022. <a href="https://www.pbs.org/newshour/arts/mega-dance-company-bred-culture-of-sex-silence-dancers-say">https://www.pbs.org/newshour/arts/mega-dance-company-bred-culture-of-sex-silence-dancers-say</a> (accessed Jan. 16, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgeeeb2e9"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgbb45ec3"></a>Ballet<br />
+<div class="outline-text-6" id="text-4-1-2-3-1">
+<ul class="org-ul">
+<li>L. Casiano, “Former Boston ballerina and husband face new sexual assault allegations,” Fox News, Sep. 30, 2021. <a href="https://www.foxnews.com/us/boston-ballerina-sexual-assault">https://www.foxnews.com/us/boston-ballerina-sexual-assault</a> (accessed Jan. 16, 2023).</li>
+<li>“Grooming and Sexual Abuse in Ballet: Why Dancers Are Especially Vulnerable,” Pointe Magazine, Dec. 01, 2021. <a href="https://pointemagazine.com/grooming-and-sexual-abuse-in-ballet/">https://pointemagazine.com/grooming-and-sexual-abuse-in-ballet/</a> (accessed Jan. 16, 2023).</li>
+<li>A. Villarreal, “‘It’s like a cult’: how sexual misconduct permeates the world of ballet,” The Guardian, Nov. 02, 2018. Accessed: Jan. 16, 2023. [Online]. Available: <a href="https://www.theguardian.com/stage/2018/nov/02/ballet-stage-me-too-sexual-abuse-harassment">https://www.theguardian.com/stage/2018/nov/02/ballet-stage-me-too-sexual-abuse-harassment</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org47e1192"></a>Education<br />
+<div class="outline-text-6" id="text-4-1-2-3-2">
+<ul class="org-ul">
+<li>G. Henderson, “What Will It Take to End Sexual Abuse in Dance Education?,” Dance Magazine, Jan. 26, 2021. <a href="https://www.dancemagazine.com/sexual-abuse-dance-education/">https://www.dancemagazine.com/sexual-abuse-dance-education/</a> (accessed Jan. 16, 2023).</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="orgf948c6f"></a>Misc<br />
+<div class="outline-text-5" id="text-4-1-2-4">
+<ul class="org-ul">
+<li>“Mr. Bean,” Wikipedia. Jan. 16, 2023. Accessed: Jan. 16, 2023. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Mr._Bean&amp;oldid=1133923404">https://en.wikipedia.org/w/index.php?title=Mr._Bean&amp;oldid=1133923404</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org3d7a1da" class="outline-3">
+<h3 id="org3d7a1da"><span class="section-number-3">4.2.</span> Religions, Spirituality, Misc</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>“Dance in mythology and religion,” Wikipedia. Nov. 06, 2023. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dance_in_mythology_and_religion&amp;oldid=1183849358">https://en.wikipedia.org/w/index.php?title=Dance_in_mythology_and_religion&amp;oldid=1183849358</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orge4df09a" class="outline-3">
+<h3 id="orge4df09a"><span class="section-number-3">4.3.</span> Misc</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>“Australian Doof Culture Has a Zionist Problem.” Accessed: Mar. 15, 2025. [Online]. Available: <a href="https://jacobin.com/2025/03/australia-doofs-zionism-idf-palestine">https://jacobin.com/2025/03/australia-doofs-zionism-idf-palestine</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org67da04d" class="outline-2">
+<h2 id="org67da04d"><span class="section-number-2">5.</span> Core</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-org82e205a" class="outline-3">
+<h3 id="org82e205a"><span class="section-number-3">5.1.</span> Dance Forms</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org5b5eb2a" class="outline-4">
+<h4 id="org5b5eb2a"><span class="section-number-4">5.1.1.</span> General</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<ul class="org-ul">
+<li>“List of dances,” Wikipedia. Jun. 17, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=List_of_dances&amp;oldid=1296094009">https://en.wikipedia.org/w/index.php?title=List_of_dances&amp;oldid=1296094009</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9f371b3" class="outline-4">
+<h4 id="org9f371b3"><span class="section-number-4">5.1.2.</span> Western Dances</h4>
+<div class="outline-text-4" id="text-5-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org3b46fc9"></a>Ballet<br />
+<div class="outline-text-5" id="text-5-1-2-1">
+<ul class="org-ul">
+<li>Ballet: <a href="https://tinyurl.com/msm4e5ve">https://tinyurl.com/msm4e5ve</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgab02135"></a>Ballroom<br />
+<div class="outline-text-5" id="text-5-1-2-2">
+<ul class="org-ul">
+<li>Ballroom Dance: <a href="https://tinyurl.com/yfhzrfzn">https://tinyurl.com/yfhzrfzn</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8779445"></a>Cabaret<br />
+<div class="outline-text-5" id="text-5-1-2-3">
+<ul class="org-ul">
+<li>Cabaret: <a href="https://tinyurl.com/vedxnt92">https://tinyurl.com/vedxnt92</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org3ed3b73"></a>Pole Dance<br />
+<div class="outline-text-5" id="text-5-1-2-4">
+<ul class="org-ul">
+<li>Pole Dance: <a href="https://tinyurl.com/mwy54jbh">https://tinyurl.com/mwy54jbh</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org33d031f"></a>Break Dance<br />
+<div class="outline-text-5" id="text-5-1-2-5">
+<ul class="org-ul">
+<li>Break Dance: <a href="https://tinyurl.com/4s9mfwa4">https://tinyurl.com/4s9mfwa4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdffd9ee"></a>Disco<br />
+<div class="outline-text-5" id="text-5-1-2-6">
+<ul class="org-ul">
+<li>Disco: <a href="https://tinyurl.com/3x56f347">https://tinyurl.com/3x56f347</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org65808ea"></a>American<br />
+<ol class="org-ol">
+<li><a id="org77ba5d5"></a>Latin<br /></li>
+<li><a id="org55ff81c"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="orga3b2c61"></a>Misc<br />
+<div class="outline-text-5" id="text-5-1-2-8">
+<ul class="org-ul">
+<li>“Royal Opera House - YouTube.” Accessed: Mar. 11, 2024. [Online]. Available: <a href="https://www.youtube.com/user/RoyalOperaHouse">https://www.youtube.com/user/RoyalOperaHouse</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-org8135d70" class="outline-4">
+<h4 id="org8135d70"><span class="section-number-4">5.1.3.</span> Middle Eastern Dances</h4>
+<div class="outline-text-4" id="text-5-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org8ea9d92"></a>Arab Folk Dances<br />
+<ol class="org-ol">
+<li><a id="org71d3a57"></a>General<br />
+<div class="outline-text-6" id="text-5-1-3-1-1">
+<ul class="org-ul">
+<li>“Arab folk dances,” Wikipedia. Jun. 12, 2025. Accessed: Jun. 13, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Arab_folk_dances&amp;oldid=1295249226">https://en.wikipedia.org/w/index.php?title=Arab_folk_dances&amp;oldid=1295249226</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org699931b"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org9082fad"></a>Belly Dance<br />
+<div class="outline-text-7" id="text-org9082fad">
+<ul class="org-ul">
+<li>Belly Dances: <a href="https://tinyurl.com/3kp34c2h">https://tinyurl.com/3kp34c2h</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgbb3f569"></a>Misc<br />
+<div class="outline-text-7" id="text-orgbb3f569">
+<ul class="org-ul">
+<li>“Dabke,” Wikipedia. Jun. 09, 2025. Accessed: Jun. 13, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dabke&amp;oldid=1294771688">https://en.wikipedia.org/w/index.php?title=Dabke&amp;oldid=1294771688</a></li>
+<li>“&lt;i lang="ar"&gt;Ardah&lt;/i&gt;,” Wikipedia. May 18, 2025. Accessed: Jun. 13, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Ardah&amp;oldid=1291078458">https://en.wikipedia.org/w/index.php?title=Ardah&amp;oldid=1291078458</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org1ba73ee"></a>Misc<br /></li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org4d4f0bd" class="outline-4">
+<h4 id="org4d4f0bd"><span class="section-number-4">5.1.4.</span> Indian Dances</h4>
+<div class="outline-text-4" id="text-5-1-4">
+</div>
+<ol class="org-ol">
+<li><a id="orgcb40fc4"></a>General<br /></li>
+<li><a id="orgca2cb75"></a>STEMM<br />
+<ol class="org-ol">
+<li><a id="org5250dc3"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-4-2-1">
+<ul class="org-ul">
+<li>N. C. Srinivasaraghavan, “IIIT professor develops ATAM, a patented and an innovative dance teaching tool,” The Hindu, Aug. 11, 2025. Accessed: Aug. 12, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/iit-professor-develops-atam-a-patented-and-an-innovative-dance-teaching-tool/article69919136.ece">https://www.thehindu.com/entertainment/dance/iit-professor-develops-atam-a-patented-and-an-innovative-dance-teaching-tool/article69919136.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org09a4b05"></a>Worldly Matters<br />
+<ol class="org-ol">
+<li><a id="org8e6c93b"></a>Misc<br />
+<div class="outline-text-6" id="text-5-1-4-3-1">
+<ul class="org-ul">
+<li>M. V. C, “Three dancers highlight the universality in the teachings Ramakrishna, Sarada Devi and Vivekananda,” The Hindu, Sep. 01, 2025. Accessed: Sep. 02, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/music/three-dancers-highlight-the-universality-in-the-teachings-ramakrishna-sarada-devi-and-vivekananda/article69999871.ece">https://www.thehindu.com/entertainment/music/three-dancers-highlight-the-universality-in-the-teachings-ramakrishna-sarada-devi-and-vivekananda/article69999871.ece</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org44d0a4a"></a>Core<br />
+<ol class="org-ol">
+<li><a id="org5368412"></a>Indian Classical Dance<br />
+<div class="outline-text-6" id="text-5-1-4-4-1">
+<ul class="org-ul">
+<li>Indian Classical Dances: <a href="https://tinyurl.com/mr9a89f2">https://tinyurl.com/mr9a89f2</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org2cc0b22"></a>Indian Folk Dances<br />
+<ul class="org-ul">
+<li><a id="orgee71999"></a>Lavani<br />
+<ul class="org-ul">
+<li><a id="orgbd96d6d"></a>General<br />
+<div class="outline-text-8" id="text-orgbd96d6d">
+<ul class="org-ul">
+<li>“Lavani,” Wikipedia. Apr. 22, 2024. Accessed: Apr. 30, 2024. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Lavani&amp;oldid=1220206525">https://en.wikipedia.org/w/index.php?title=Lavani&amp;oldid=1220206525</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orge07da1a"></a>Misc<br />
+<div class="outline-text-8" id="text-orge07da1a">
+<ul class="org-ul">
+<li>Lavani, folk dance of Maharashtra, (Feb. 12, 2015). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=GgglIQeIAyw">https://www.youtube.com/watch?v=GgglIQeIAyw</a></li>
+
+<li>Dr. Sonal Mansingh | Odissi | Lavanyavati | Dances of India, (May 23, 2021). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=YncGpkhPypI">https://www.youtube.com/watch?v=YncGpkhPypI</a></li>
+
+<li>Marathi Long Play | Lavani Bhulali Abhangala | Part 01 | लावणी भुलली अभंगाला | Marathi Natak, (Jan. 26, 2024). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=1JMnKYFiQHc">https://www.youtube.com/watch?v=1JMnKYFiQHc</a></li>
+
+<li>Lavani | Folk Dances of Maharashtra | Dance | Culture | DD Archives, (Jan. 02, 2019). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=oMxHCJVhloY">https://www.youtube.com/watch?v=oMxHCJVhloY</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>Lavanyamayi Lavni | Aaswad Musicappericiation | लावण्यमयी लावणी | लक्ष्मीबाई कोल्हापूरकर | आस्वाद, (Dec. 03, 2021). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=O95UB71vUfs">https://www.youtube.com/watch?v=O95UB71vUfs</a></li>
+</ul>
+
+
+<ul class="org-ul">
+<li>SUPPORT THE ARTISTS SERIES - Episode 496 | Bhavana Abhay Bawane | Lavani Folk Dance, (Nov. 29, 2021). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=OiPm-zzUGYg">https://www.youtube.com/watch?v=OiPm-zzUGYg</a></li>
+<li>SUPPORT THE ARTISTS SERIES - Episode 495 | Priyanka Raju Chavhan | Lavani Folk Dance, (Nov. 29, 2021). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=W7RO6rrTZRk">https://www.youtube.com/watch?v=W7RO6rrTZRk</a></li>
+<li>SUPPORT THE ARTISTS SERIES - Episode 493 | Roshani Patik Patel | Lavani Folk Dance, (Nov. 29, 2021). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=t3mf-r2PN7Q">https://www.youtube.com/watch?v=t3mf-r2PN7Q</a></li>
+<li>SUPPORT THE ARTISTS SERIES - Episode 434 | Rahul Ram Halde | Lavani Folk Dance, (Sep. 27, 2021). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=nv5O03f4QXg">https://www.youtube.com/watch?v=nv5O03f4QXg</a></li>
+<li>SUPPORT THE ARTISTS SERIES - Episode 436 | Sneha Ganesh Kodape | Lavani Folk Dance, (Sep. 27, 2021). Accessed: Apr. 30, 2024. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=2HqTYPG9HVo">https://www.youtube.com/watch?v=2HqTYPG9HVo</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgbdcdebe"></a>Misc<br />
+<div class="outline-text-7" id="text-orgbdcdebe">
+<ul class="org-ul">
+<li>K. H. Kumar, “Dakkebali, Sarpam Thullal, Jaagar: How these Indian folk dance rituals worship serpent deities,” Scroll.in. Accessed: Aug. 07, 2025. [Online]. Available: <a href="https://scroll.in/article/1084842/dakkebali-sarpam-thullal-jaagar-how-these-indian-folk-dance-rituals-worship-serpent-deities">https://scroll.in/article/1084842/dakkebali-sarpam-thullal-jaagar-how-these-indian-folk-dance-rituals-worship-serpent-deities</a></li>
+
+<li>Unknown Artist - Folk Dances Of India. 2023. Accessed: Jul. 27, 2023. [Online]. Available: <a href="https://www.discogs.com/master/1606460-Unknown-Artist-Folk-Dances-Of-India">https://www.discogs.com/master/1606460-Unknown-Artist-Folk-Dances-Of-India</a></li>
+<li>Unknown Artist - Folk Dances Of India. 2023. Accessed: Jul. 27, 2023. [Online]. Available: <a href="https://www.discogs.com/release/27692940-Unknown-Artist-Folk-Dances-Of-India">https://www.discogs.com/release/27692940-Unknown-Artist-Folk-Dances-Of-India</a></li>
+
+<li>J. Pani and P. Jiwan, Celebration Of Life: Indian Folk Dances. New Delhi: Publications Division, Ministry Of Information &amp; Broadcasting, Govt. of India, 2000.</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org6b49d3b"></a>Regional Dances<br />
+<ul class="org-ul">
+<li><a id="orge9f03b4"></a>Bhangra<br /></li>
+</ul>
+</li>
+</ol>
+</li>
+<li><a id="orgd3229c8"></a>Arts<br />
+<ol class="org-ol">
+<li><a id="org70d6273"></a>Art<br />
+<ul class="org-ul">
+<li><a id="org757055d"></a>Images<br />
+<div class="outline-text-7" id="text-org757055d">
+<ul class="org-ul">
+<li>“A Nautch Girl dancing, 1891 - Richard Caton Woodville Jr. - WikiArt.org,” www.wikiart.org. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.wikiart.org/en/richard-caton-woodville-jr/a-nautch-girl-dancing-1891">https://www.wikiart.org/en/richard-caton-woodville-jr/a-nautch-girl-dancing-1891</a></li>
+<li>“The Nautch - Edwin Lord Weeks - WikiArt.org,” www.wikiart.org. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.wikiart.org/en/edwin-lord-weeks/the-nautch">https://www.wikiart.org/en/edwin-lord-weeks/the-nautch</a></li>
+<li>“Sketch Two Nautch Girls - Edwin Lord Weeks - WikiArt.org,” www.wikiart.org. Accessed: May 06, 2024. [Online]. Available: <a href="https://www.wikiart.org/en/edwin-lord-weeks/sketch-two-nautch-girls">https://www.wikiart.org/en/edwin-lord-weeks/sketch-two-nautch-girls</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="org50192db"></a>Misc<br /></li>
+</ol>
+</li>
+<li><a id="org520d223"></a>Special Topics<br />
+<ol class="org-ol">
+<li><a id="orgd589618"></a>Tawaif<br />
+<div class="outline-text-6" id="text-5-1-4-6-1">
+<ul class="org-ul">
+<li>Tawaif: <a href="https://tinyurl.com/mr3cvzf4">https://tinyurl.com/mr3cvzf4</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org16c4de2"></a>Mujra<br />
+<div class="outline-text-6" id="text-5-1-4-6-2">
+<ul class="org-ul">
+<li>Mujra: <a href="https://tinyurl.com/ya29z8kd">https://tinyurl.com/ya29z8kd</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org037e564"></a>Misc<br />
+<div class="outline-text-5" id="text-5-1-4-7">
+<ul class="org-ul">
+<li>R. Dhanaraj, “Kundalini by Yamini Muthanna beckons to one’s inner being,” The Hindu, Dec. 08, 2025. Accessed: Dec. 09, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/kundalini-by-yamini-muthanna-beckons-to-ones-inner-being/article70364884.ece">https://www.thehindu.com/entertainment/dance/kundalini-by-yamini-muthanna-beckons-to-ones-inner-being/article70364884.ece</a></li>
+
+<li>“Dancing Like a Man: Astad Deboo and Contemporary Indian Dance,” The India Forum. Accessed: Sep. 23, 2025. [Online]. Available: <a href="https://www.theindiaforum.in/book-reviews/dancing-man-astad-deboo-and-contemporary-indian-dance">https://www.theindiaforum.in/book-reviews/dancing-man-astad-deboo-and-contemporary-indian-dance</a></li>
+
+<li>V. P. Dhananjayan, “Remembering Sarada Teacher, architect of the Kalakshetra methodology,” The Hindu, Sep. 15, 2025. Accessed: Sep. 16, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/remembering-sarada-teacher-architect-of-the-kalakshetra-methodology/article70051882.ece">https://www.thehindu.com/entertainment/dance/remembering-sarada-teacher-architect-of-the-kalakshetra-methodology/article70051882.ece</a></li>
+
+<li>N. Ganguly, “Legacy of rhythm: 17th edition of Vysakhi Nrithyotsav brings together acclaimed artistes,” The Hindu, Sep. 11, 2025. Accessed: Sep. 14, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/legacy-of-rhythm/article70036802.ece">https://www.thehindu.com/entertainment/dance/legacy-of-rhythm/article70036802.ece</a></li>
+
+<li>V. V. Ramani, “Kavya Ganesh impresses with her nuanced performance,” The Hindu, Jun. 17, 2025. Accessed: Jun. 26, 2025. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/kavya-ganesh-impresses-with-her-nuanced-performance/article69674808.ece">https://www.thehindu.com/entertainment/dance/kavya-ganesh-impresses-with-her-nuanced-performance/article69674808.ece</a></li>
+
+<li>“Whose Dance Is It Anyway? | Economic and Political Weekly.” Accessed: Jun. 15, 2025. [Online]. Available: <a href="https://www.epw.in/journal/2025/24/insight/whose-dance-it-anyway.html">https://www.epw.in/journal/2025/24/insight/whose-dance-it-anyway.html</a></li>
+
+<li>PTI, “Manuscripts of Bhagavad Gita, Natyashastra inscribed on UNESCO’s Memory of the World Register,” The Hindu, Apr. 18, 2025. Accessed: Apr. 19, 2025. [Online]. Available: <a href="https://www.thehindu.com/news/national/manuscripts-of-bhagavad-gita-natyashastra-inscribed-on-unescos-memory-of-the-world-register/article69463876.ece">https://www.thehindu.com/news/national/manuscripts-of-bhagavad-gita-natyashastra-inscribed-on-unescos-memory-of-the-world-register/article69463876.ece</a></li>
+
+<li>F. J. Rambhai, “5 South Asian Classical Dancers Who Resist Patriarchal Norms Through Their Dance Performances,” Feminism in India. Accessed: Feb. 04, 2025. [Online]. Available: <a href="https://feminisminindia.com/2025/02/04/5-south-asian-classical-dancers-who-resist-patriarchal-norms-through-their-dance-performances/">https://feminisminindia.com/2025/02/04/5-south-asian-classical-dancers-who-resist-patriarchal-norms-through-their-dance-performances/</a></li>
+
+<li>S. Benegal, Zubeidaa, (Jan. 19, 2001).</li>
+
+<li>A. Morcom, Illicit Worlds of Indian Dance: Cultures of Exclusion. Oxford New York Auckland: Oxford Univ Pr, 2013.</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgfc16d18" class="outline-4">
+<h4 id="orgfc16d18"><span class="section-number-4">5.1.5.</span> Pop</h4>
+</div>
+<div id="outline-container-org9f5698b" class="outline-4">
+<h4 id="org9f5698b"><span class="section-number-4">5.1.6.</span> Misc</h4>
+</div>
+</div>
+<div id="outline-container-org3df8546" class="outline-3">
+<h3 id="org3df8546"><span class="section-number-3">5.2.</span> Education, Research</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li>“Dance research,” Wikipedia. Jun. 15, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Dance_research&amp;oldid=1295745606">https://en.wikipedia.org/w/index.php?title=Dance_research&amp;oldid=1295745606</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org40110ac" class="outline-2">
+<h2 id="org40110ac"><span class="section-number-2">6.</span> Arts</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgdbf23be" class="outline-3">
+<h3 id="orgdbf23be"><span class="section-number-3">6.1.</span> Music</h3>
+<div class="outline-text-3" id="text-6-1">
+</div>
+<div id="outline-container-org6343c4f" class="outline-4">
+<h4 id="org6343c4f"><span class="section-number-4">6.1.1.</span> Dance Music</h4>
+<div class="outline-text-4" id="text-6-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgdf828e9"></a>South Asian Dances<br />
+<ol class="org-ol">
+<li><a id="org38a3347"></a>Mujra Music<br />
+<div class="outline-text-6" id="text-6-1-1-1-1">
+<ul class="org-ul">
+<li>Mujra - Music: <a href="https://tinyurl.com/3bzyft2e">https://tinyurl.com/3bzyft2e</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org78b7cd4"></a>Classical Dance in Films<br />
+<div class="outline-text-6" id="text-6-1-1-1-2">
+<ul class="org-ul">
+<li>Indian Classical Dances in Films: <a href="https://tinyurl.com/mw4669uj">https://tinyurl.com/mw4669uj</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org7ca7fea"></a>Misc Dances<br />
+<ol class="org-ol">
+<li><a id="org5c807ac"></a>Ballroom Dance<br />
+<div class="outline-text-6" id="text-6-1-1-2-1">
+<ul class="org-ul">
+<li>Eros Now Music, <i>Dhadkan Zara Ruk Gayi Hai</i> (Video Song) | Prahaar | Madhuri Dixit &amp; Nana Patekar, (Jan. 09, 2008). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=mA5icvMaRNA">https://www.youtube.com/watch?v=mA5icvMaRNA</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org74f0d1e"></a>Belly Dance<br />
+<ul class="org-ul">
+<li><a id="org0beafb6"></a>General<br /></li>
+<li><a id="orged765c0"></a>Recordings<br />
+<ul class="org-ul">
+<li><a id="org9e90696"></a>Solo<br /></li>
+<li><a id="org96e36e1"></a>Collections<br />
+<ul class="org-ul">
+<li><a id="orga1ffa2a"></a>Playlists<br /></li>
+<li><a id="orgf9bd59d"></a>Misc<br /></li>
+</ul>
+</li>
+<li><a id="orgcbcae85"></a>India<br />
+<div class="outline-text-8" id="text-orgcbcae85">
+<ul class="org-ul">
+<li>Shemaroo Filmi Gaane, <i>Mehbooba Mehbooba</i> | Sholay (1975) | Helen | Amitabh Bachchan | Bollywood Dance Hit Song, (Nov. 29, 2018). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ByAbV-MKDgs">https://www.youtube.com/watch?v=ByAbV-MKDgs</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org14c19e8"></a>Misc<br />
+<div class="outline-text-8" id="text-org14c19e8">
+<ul class="org-ul">
+<li>“Picture Yourself Belly Dancing,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/topkapi-instrumental-ensemble/picture-yourself-belly-dancing/islamica-world/music/album/smithsonian">https://folkways.si.edu/topkapi-instrumental-ensemble/picture-yourself-belly-dancing/islamica-world/music/album/smithsonian</a></li>
+<li>“Belly Dance Music,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/george-abdo/belly-dance-music/islamica-world/album/smithsonian">https://folkways.si.edu/george-abdo/belly-dance-music/islamica-world/album/smithsonian</a></li>
+<li>“Spotlight on Belly Dancing,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/john-vartan/spotlight-on-belly-dancing/islamica-world/music/album/smithsonian">https://folkways.si.edu/john-vartan/spotlight-on-belly-dancing/islamica-world/music/album/smithsonian</a></li>
+<li>“Egyptian Nights: Music for Belly Dancing,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/khamis-el-fino-ali/egyptian-nights-music-for-belly-dancing/islamica-world/music/album/smithsonian">https://folkways.si.edu/khamis-el-fino-ali/egyptian-nights-music-for-belly-dancing/islamica-world/music/album/smithsonian</a></li>
+<li>“The Magic of Belly Dancing,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/george-abdo/the-magic-of-belly-dancing/islamica-world/music/album/smithsonian">https://folkways.si.edu/george-abdo/the-magic-of-belly-dancing/islamica-world/music/album/smithsonian</a></li>
+<li>“Belly Dancing with George Abdo,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/george-abdo/belly-dancing/islamica-world/music/album/smithsonian">https://folkways.si.edu/george-abdo/belly-dancing/islamica-world/music/album/smithsonian</a></li>
+<li>“Belly Dance!: The Best of George Abdo and His Flames of Araby Orchestra,” Smithsonian Folkways Recordings. Accessed: Jul. 18, 2025. [Online]. Available: <a href="https://folkways.si.edu/belly-dance-the-best-of-george-abdo-and-his-flames-of-araby-orchestra/islamica-world/music/album/smithsonian">https://folkways.si.edu/belly-dance-the-best-of-george-abdo-and-his-flames-of-araby-orchestra/islamica-world/music/album/smithsonian</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="orgbd00a9e"></a>Disco<br />
+<ul class="org-ul">
+<li><a id="org72ffb1e"></a>General<br /></li>
+<li><a id="org828e480"></a>Worldly Matters<br /></li>
+<li><a id="orgd160178"></a>Core<br />
+<ul class="org-ul">
+<li><a id="org51a9af4"></a>Variants<br />
+<ul class="org-ul">
+<li><a id="org8e5c359"></a>South Asian Disco<br />
+<ul class="org-ul">
+<li><a id="org443baad"></a>PB<br />
+<div class="outline-text-10" id="text-org443baad">
+<ul class="org-ul">
+<li>SHEMAROO Filmi Gaane, Jawane Janeman | Namak Halaal(1982)| Parveen Babi | Amitabh Bachchan | Shashi Kapoor, (Jan. 19, 2020). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=AIOmxYh9pBc">https://www.youtube.com/watch?v=AIOmxYh9pBc</a></li>
+<li>Shemaroo, Namak Halaal - Raat Baki Baat Baki Hona Hai Jo - Shashi Kapoor &amp; Parveen Babi, (Feb. 20, 2009). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FVhIPVDxsPQ">https://www.youtube.com/watch?v=FVhIPVDxsPQ</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org65db1cc"></a>ZA<br />
+<div class="outline-text-10" id="text-org65db1cc">
+<ul class="org-ul">
+<li>GAANE Sune Ansune, Laila O Laila | Amit Kumar, Kanchan| Qurbani 1980 Songs | Feroz Khan, Zeenat Aman, (Aug. 01, 2020). Accessed: Oct. 07, 2021. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=gbPIRKPRT3E">https://www.youtube.com/watch?v=gbPIRKPRT3E</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org81479f3"></a>MC<br />
+<div class="outline-text-10" id="text-org81479f3">
+<ul class="org-ul">
+<li>“DISCO Dancer - Koi Yahan Aha Nache Nache Koii Wahan - Bappi Lahiri - Usha Utthup - YouTube.” <a href="https://www.youtube.com/watch?v=bAipM6942Xs">https://www.youtube.com/watch?v=bAipM6942Xs</a> (accessed Jul. 02, 2023).</li>
+<li>“Jimmy Jimmy Aaja Aaja | Bappi Lahiri | Mithun | Disco Dancer | 80s Hits - YouTube.” <a href="https://www.youtube.com/watch?v=H1wmm1M7idc">https://www.youtube.com/watch?v=H1wmm1M7idc</a> (accessed Jul. 02, 2023).</li>
+<li>Disco Dancer - Jimmi Jimmi Jimmi Aaja Aaja Aaja Aaja Re Mere - Parvati Khan, (Feb. 13, 2009). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ZUdJQSUcK_Y">https://www.youtube.com/watch?v=ZUdJQSUcK_Y</a></li>
+<li>Disco Dancer - I Am A Disco Dancer Zindagi Mera Gaana - Vijay Benedict, (Feb. 16, 2009). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=7JdEZoffm-Q">https://www.youtube.com/watch?v=7JdEZoffm-Q</a></li>
+<li>Remembering Bappi Da | Top 10 Songs of Bappi Lahiri | Yaad Aa Raha Hai | Raat Baaqi Baat Baaqi, (Feb. 16, 2022). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=kB_xIZf0IpA">https://www.youtube.com/watch?v=kB_xIZf0IpA</a></li>
+<li>Disco Dancer | The Musical | Salim-Sulaiman | Jimmy Jimmy | Yaad Aa Raha Hai | Auva Auva, (Feb. 20, 2023). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=03fXOF2Ej6M">https://www.youtube.com/watch?v=03fXOF2Ej6M</a></li>
+</ul>
+</div>
+</li>
+<li><a id="orgdc0222c"></a>RK<br />
+<div class="outline-text-10" id="text-orgdc0222c">
+<ul class="org-ul">
+<li>MERI Umar Ke Naujawano (Om Shanti Om)| Karz | Rishi Kapoor, Tina Munim | Kishore Kumar | 80’s Hits, (Mar. 13, 2022). Accessed: Jul. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=CYCoNpxWWzk">https://www.youtube.com/watch?v=CYCoNpxWWzk</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org8b77152"></a>NH<br />
+<div class="outline-text-10" id="text-org8b77152">
+<ul class="org-ul">
+<li>Best Of Nazia Hassan Songs | Disco Deewane | Boom Boom |  Khushi |  Lekin Mera Dil, (Aug. 06, 2013). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=d4LAAPNMVH4">https://www.youtube.com/watch?v=d4LAAPNMVH4</a></li>
+<li>“Best of Nazia Hassan | Superhit Pop Songs | Disco Deewane - YouTube.” <a href="https://www.youtube.com/watch?v=mZqawa_lmSo">https://www.youtube.com/watch?v=mZqawa_lmSo</a> (accessed Jul. 02, 2023).</li>
+</ul>
+</div>
+</li>
+<li><a id="org4fbe440"></a>Misc<br />
+<div class="outline-text-10" id="text-org4fbe440">
+<ul class="org-ul">
+<li>80s Is Back | Disco Deewane | Bappi Lahiri | Usha Uthup | Anu Malik | Sukhwinder Singh | Iya Iya O, (Feb. 23, 2013). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=lgMR3uTiY38">https://www.youtube.com/watch?v=lgMR3uTiY38</a></li>
+
+<li>Shemaroo Filmi Gaane, Yaar Bina Chain Kahan Re (HD) | Saaheb Song | Anil Kapoor | Amrita Singh | Bappi lahiri Retro Hits, (Sep. 14, 2017). Accessed: Apr. 01, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=yVImQoGNdTE">https://www.youtube.com/watch?v=yVImQoGNdTE</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgd75c288"></a>Misc<br /></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a id="org7ce9f2e"></a>Misc<br />
+<div class="outline-text-7" id="text-org7ce9f2e">
+<ul class="org-ul">
+<li>A. Frey, “What’s the Legacy of Disco Music?,” JSTOR Daily. Accessed: Feb. 24, 2025. [Online]. Available: <a href="https://daily.jstor.org/whats-the-legacy-of-disco-music/">https://daily.jstor.org/whats-the-legacy-of-disco-music/</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgce9bcd6"></a>Break Dance<br />
+<ul class="org-ul">
+<li><a id="org1c6db21"></a>Films<br />
+<div class="outline-text-7" id="text-org1c6db21">
+<ul class="org-ul">
+<li>Urvashi Urvashi | Hum Se Hai Muqabala | Prabhu Deva | A.R.Rahman, (Apr. 03, 2013). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dkedupX73xs">https://www.youtube.com/watch?v=dkedupX73xs</a></li>
+<li>Muqabala Muqabala - Video Song | Hum Se Hai Muqabala | Parbhu Deva | A.R.Rahman | Best Dance Song, (Apr. 03, 2013). Accessed: Jul. 02, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=FQzC23GLptE">https://www.youtube.com/watch?v=FQzC23GLptE</a></li>
+</ul>
+</div>
+</li>
+<li><a id="org30eace7"></a>Pop<br />
+<div class="outline-text-7" id="text-org30eace7">
+<ul class="org-ul">
+<li>Michael Jackson, Michael Jackson - Smooth Criminal (Official Video), (Nov. 19, 2010). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=h_D3VFfhvs4">https://www.youtube.com/watch?v=h_D3VFfhvs4</a></li>
+<li>Michael Jackson, Michael Jackson - Beat It (Official 4K Video), (Apr. 11, 2011). Accessed: Jan. 14, 2025. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=oRdxUFDoQe0">https://www.youtube.com/watch?v=oRdxUFDoQe0</a></li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li><a id="orgceb4b78"></a>Bar, Pub, Theka Dances<br />
+<div class="outline-text-6" id="text-6-1-1-2-5">
+<ul class="org-ul">
+<li>Alcohol, Dance: <a href="https://tinyurl.com/2p9wcxna">https://tinyurl.com/2p9wcxna</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+<li><a id="org3eac754"></a>Misc<br />
+<div class="outline-text-5" id="text-6-1-1-3">
+<ul class="org-ul">
+<li>Chaiyya Chaiyya - Lyrical Video | Dil Se | Sukhwinder Singh | A R Rahman | Ishtar Music, (Jun. 26, 2021). Accessed: Jul. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=9yGukg6SSZ4">https://www.youtube.com/watch?v=9yGukg6SSZ4</a></li>
+<li>Fevicol Se Full Video Song Dabangg 2 (Official) ★ Kareena Kapoor ★ Salman Khan, (Jan. 09, 2013). Accessed: Jul. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=zE7Pwgl6sLA">https://www.youtube.com/watch?v=zE7Pwgl6sLA</a></li>
+<li>“Billo Rani” Full Song | Dhan Dhana Dhan Goal |John Abraham | Pritam | Anand Raaj Anand Richa Sharma, (Apr. 05, 2011). Accessed: Jul. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=ZHFX_5X14-8">https://www.youtube.com/watch?v=ZHFX_5X14-8</a></li>
+<li>Choli ke Peeche Kya Hai | Khal Nayak | Sanjay Dutt | Madhuri Dixit | Alka Yagnik | Ila Arun, (May 05, 2023). Accessed: Jul. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=3OXiqmUhB70">https://www.youtube.com/watch?v=3OXiqmUhB70</a></li>
+<li>“Ek Do Teen Char” Full VIDEO Song - Madhuri Dixit | Tezaab, (Jun. 12, 2012). Accessed: Jul. 04, 2023. [Online Video]. Available: <a href="https://www.youtube.com/watch?v=dx57HiK1wUg">https://www.youtube.com/watch?v=dx57HiK1wUg</a></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org9297802" class="outline-3">
+<h3 id="org9297802"><span class="section-number-3">6.2.</span> Misc</h3>
+<div class="outline-text-3" id="text-6-2">
+<ul class="org-ul">
+<li>L. Gershon, “The Roots of Catholic Samba,” JSTOR Daily. Accessed: Jul. 19, 2025. [Online]. Available: <a href="https://daily.jstor.org/the-roots-of-catholic-samba/">https://daily.jstor.org/the-roots-of-catholic-samba/</a></li>
+
+<li>BY, “Ana de Armas Is a Battle-Weary Ballerina.” Accessed: Jun. 11, 2025. [Online]. Available: <a href="https://jacobin.com/2025/06/john-wick-ballerina-de-armas-action">https://jacobin.com/2025/06/john-wick-ballerina-de-armas-action</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgcc6363b" class="outline-2">
+<h2 id="orgcc6363b"><span class="section-number-2">7.</span> Special Topics</h2>
+</div>
+<div id="outline-container-orgd3c9da7" class="outline-2">
+<h2 id="orgd3c9da7"><span class="section-number-2">8.</span> Misc</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+<div id="outline-container-org378c60e" class="outline-3">
+<h3 id="org378c60e"><span class="section-number-3">8.1.</span> Misc</h3>
+<div class="outline-text-3" id="text-8-1">
+<ul class="org-ul">
+<li>“Dance showed me the untapped power of our attention muscle | Psyche Ideas.” Accessed: Aug. 17, 2025. [Online]. Available: <a href="https://psyche.co/ideas/dance-showed-me-the-untapped-power-of-our-attention-muscle">https://psyche.co/ideas/dance-showed-me-the-untapped-power-of-our-attention-muscle</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org20b82d2" class="outline-3">
+<h3 id="org20b82d2"><span class="section-number-3">8.2.</span> Articles, Essays</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li>“Striptease,” Wikipedia. Jun. 12, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Striptease&amp;oldid=1295208551">https://en.wikipedia.org/w/index.php?title=Striptease&amp;oldid=1295208551</a></li>
+<li>“Lap dance,” Wikipedia. May 25, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Lap_dance&amp;oldid=1292138031">https://en.wikipedia.org/w/index.php?title=Lap_dance&amp;oldid=1292138031</a></li>
+<li>“Twerking,” Wikipedia. May 31, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Twerking&amp;oldid=1293273294">https://en.wikipedia.org/w/index.php?title=Twerking&amp;oldid=1293273294</a></li>
+<li>“Table dance,” Wikipedia. Apr. 02, 2025. Accessed: Jun. 21, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Table_dance&amp;oldid=1283562728">https://en.wikipedia.org/w/index.php?title=Table_dance&amp;oldid=1283562728</a></li>
+
+<li>“You need to build mastery in order to find your flow | Aeon Essays,” Aeon. Accessed: Jun. 10, 2025. [Online]. Available: <a href="https://aeon.co/essays/you-need-to-build-mastery-in-order-to-find-your-flow">https://aeon.co/essays/you-need-to-build-mastery-in-order-to-find-your-flow</a></li>
+
+<li>J. Thomson, “The dancing monk: Why mature people don’t chase total control,” Big Think. Accessed: Jun. 05, 2025. [Online]. Available: <a href="https://bigthink.com/mini-philosophy/why-mature-people-dont-chase-total-control/">https://bigthink.com/mini-philosophy/why-mature-people-dont-chase-total-control/</a></li>
+
+<li>“Flamenco,” Wikipedia. Jan. 04, 2025. Accessed: Jan. 12, 2025. [Online]. Available: <a href="https://en.wikipedia.org/w/index.php?title=Flamenco&amp;oldid=1267394299">https://en.wikipedia.org/w/index.php?title=Flamenco&amp;oldid=1267394299</a></li>
+
+<li>“Dance was ubiquitous in ancient Rome. What was its meaning? | Aeon Essays,” Aeon. Accessed: Dec. 13, 2024. [Online]. Available: <a href="https://aeon.co/essays/dance-was-ubiquitous-in-ancient-rome-what-was-its-meaning">https://aeon.co/essays/dance-was-ubiquitous-in-ancient-rome-what-was-its-meaning</a></li>
+
+<li>M. Durrani, “Aperiodicity: the dance event bringing non-repeating patterns to life,” Physics World. Accessed: Jul. 18, 2024. [Online]. Available: <a href="https://physicsworld.com/aperiodicity-the-dance-event-bringing-non-repeating-patterns-to-life/">https://physicsworld.com/aperiodicity-the-dance-event-bringing-non-repeating-patterns-to-life/</a></li>
+
+<li>“Dance, dance evolution | Psyche Films,” Psyche. Accessed: Jul. 13, 2024. [Online]. Available: <a href="https://psyche.co/films/every-culture-dances-so-why-did-humans-evolve-to-get-down">https://psyche.co/films/every-culture-dances-so-why-did-humans-evolve-to-get-down</a></li>
+
+<li>R. Vijayakumar, “How classical dance and yoga complement each other,” The Hindu, Jun. 18, 2024. Accessed: Jun. 21, 2024. [Online]. Available: <a href="https://www.thehindu.com/entertainment/dance/how-classical-dance-and-yoga-complement-each-other/article68303429.ece">https://www.thehindu.com/entertainment/dance/how-classical-dance-and-yoga-complement-each-other/article68303429.ece</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org24d99a6" class="outline-3">
+<h3 id="org24d99a6"><span class="section-number-3">8.3.</span> Institute for Advanced Study</h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li>“Dance: Past, Present, and Future with Jennifer Homans and Tamara Rojo | Institute for Advanced Study - YouTube.” Accessed: May 30, 2024. [Online]. Available: <a href="https://www.youtube.com/watch?v=3xXSmadKnV0&amp;list=WL&amp;index=21">https://www.youtube.com/watch?v=3xXSmadKnV0&amp;list=WL&amp;index=21</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org800e2e1" class="outline-3">
+<h3 id="org800e2e1"><span class="section-number-3">8.4.</span> Internet Resources</h3>
+<div class="outline-text-3" id="text-8-4">
+<ul class="org-ul">
+<li>“Homepage,” Studio Wayne McGregor. Accessed: Jun. 20, 2024. [Online]. Available: <a href="https://waynemcgregor.com/">https://waynemcgregor.com/</a></li>
+<li>“Home,” Pointe Magazine. <a href="https://pointemagazine.com/">https://pointemagazine.com/</a> (accessed Jan. 16, 2023).</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc26037c" class="outline-3">
+<h3 id="orgc26037c"><span class="section-number-3">8.5.</span> Texts</h3>
+<div class="outline-text-3" id="text-8-5">
+<ul class="org-ul">
+<li>D. Kelly, Ballerina: Sex, Scandal, and Suffering Behind the Symbol of Perfection. Greystone Books Ltd, 2012.</li>
+
+<li>A. Shay, The Dangerous Lives of Public Performers: Dancing, Sex, and Entertainment in the Islamic World. Springer, 2014.</li>
+</ul>
+
+
+<ul class="org-ul">
+<li>J. L. Hanna, Dancing to Learn: The Brain’s Cognition, Emotion, and Movement. Rowman &amp; Littlefield, 2014.</li>
+<li>J. L. Hanna, Dancing for Health: Conquering and Preventing Stress. Rowman Altamira, 2006.</li>
+<li>J. L. Hanna, Dance, Sex, and Gender: Signs of Identity, Dominance, Defiance, and Desire. University of Chicago Press, 1988.</li>
+<li>J. L. Hanna, To Dance is Human: A Theory of Nonverbal Communication. University of Chicago Press, 1987.</li>
+</ul>
+
+<hr />
+
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/zero/blob/main/bigpic.html">Big Picture</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/miscurls.html">Misc</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/omo-today.html">Today</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/omo-aajkal.html">Current Affairs</a> <b>|</b>
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/contact-info.html">Contact Info</a>,
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/license.html">License</a>, 
+<a href="https://htmlpreview.github.io/?https://github.com/eyememyself/eyememyself.github.io/blob/main/disclaimer.html">Disclaimer</a>
+</p>
+
+
+<hr />
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Staff Member(s), <a href="https://eyememyself.github.io">OurManyOrgs</a></p>
+<p class="date">Created: 2026-05-02 Sat 14:34</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
